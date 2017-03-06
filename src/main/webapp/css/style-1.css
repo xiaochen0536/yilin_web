@@ -1,0 +1,282 @@
+h1,h2,h3,h4,h5,h6,p,ul,li,dl,dt,dd,body,input,tabel,tr,td{margin:0;padding:0;border:0;outline:none;}
+img{border:0;}
+ul{list-style:none;}
+a,body{color:#333;}
+a:link,u,a{text-decoration:none;}
+.wrap{width:1020px;margin:0 auto;overflow:hidden;_zoom:1;}
+.left{float:left;}
+.right{float:right;}
+.adW{clear:both;}
+/*共用部分*/
+#header{height:auto;margin:0 auto;overflow:visible;}
+#logo{width:157px;height:59px;float:left;background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat 0 0;margin-top:24px;}
+#header .left{_zoom:1;width:490px;}
+#header .selList{width:28px;height:25px;float:left;background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat -166px -1px;margin-top:44px;margin-left:8px;cursor:pointer;position:relative;z-index:101;margin-right:20px;}
+#header .right{width:516px;overflow:hidden;_zoom:1;}
+#header .right div{text-align:right;overflow:hidden;_zoom:1;}
+#header .right  .headerNav{width:424px;float:left;}
+.headerNav{line-height:47px;padding-top:10px;}
+#header .right a{font-size:12px;font-weight:bold;margin-left:15px;}
+#header .right  .register{border-left:2px solid #696969;margin:0;padding-left:5px;}
+#header .right .login{margin:0;padding-right:8px;}
+#header .right span{float:right;overflow:hidden;width:424px;}
+.seachTxt{width:85%;height:28px;line-height:28px;float:left;border:1px solid #c5c4c4;padding-left:8px;box-shadow:inset 1px 1px 2px #ccc;
+          -webkit-box-shadow:inset 1px 1px 2px #ccc;-moz-box-shadow:inset 1px 1px 2px #ccc;}
+#header .right .seachBtn{width:12%;height:28px;border-bottom:2px solid #005752;background:#00883e;float:left;text-align:center;margin:0;}
+.seachBtn u{display:inline-block;width:14px;height:14px;background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat -213px -1px;margin-top:7px;}
+#header .right .zd{float:right;width:71px;height:108px;overflow:hidden;background:url("zd.png"/*tpa=http://www.yilin.net.cn/images/zd.png*/) no-repeat 0 15px;transition:1s;-webkit-transition:0.1s;-moz-transition:1s;position:relative;}
+#header .right .zd u{display:block;width:100%;height:108px;position:absolute;bottom:-15px;left:0;background:#000;background:rgba(0,0,0,0);filter:alpha(opacity=0);color:#fff;text-indent:5em;
+                     font-size:14px;line-height:98px;text-align:center;font-weight:normal;font-family:"Microsoft YaHei";transition:0.2s;-webkit-transition:0.2s;-moz-transition:0.2s;}
+#header .right .zd:hover{background-position: 0 10px;}
+#header .right .zd:hover u{bottom:-10px;background:rgba(0,0,0,0.5);filter:alpha(opacity=50);text-indent:0em;}
+.selPanel{width:455px;height:161px;background:#fff;border:1px solid #e6e6e6;position:absolute;left:40px;z-index:100;padding:35px 0;display:none;}
+.selPanel u{display:block;width:5px;height:11px;position:absolute;top:7px;left:-5px;background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat -233px 0;}
+#header .selPanel .left{width:127px;padding:0 15px;border-right:1px dashed #bbb;}
+ .selPanel .left a{display:block;width:127px;height:30px;background:#f2f2f2;font-size:14px;color:#555;text-align:center;line-height:30px;margin-bottom:30px;}
+.selPanel .left a.cur{background:#00883e;color:#fff;text-decoration:none;}
+.selPanel .left .noMargin{margin-bottom:10px;}
+#header .selPanel .right {width:275px;margin-right:6px;}
+#header .selPanel .right span{width:100%;font-size:12px;color:#555;font-weight:bold;line-height:30px;display:block;}
+#header .selPanel .right span a{font-size:12px;color:#555;font-weight:bold;line-height:30px;}
+#header .selPanel .right a{font-weight:normal;font-size:12px;color:#555;line-height:24px;display:inline-block;margin-left:0;margin-right:16px;}
+#header .selPanel .right a:hover{color:#cc0009;}
+.selPanel .right li{display:none;}
+.selPanel .right li.cur{display:block;}
+.selPanel .right li ul{padding-right:10px;}
+#header .selPanel .right a.first{margin:0;text-decoration:none;color:#333;}
+#header .selPanel .right li li{display:block;border-bottom:1px dashed #ccc;padding:8px 0;}
+#nav{width:100%;overflow:hidden;border-top:5px solid #00883e;border-bottom:4px solid #eaeaea;}
+#nav ul{width:1020px;margin:0 auto;overflow:hidden;_zoom:1;}
+#nav li{width:96px;float:left;height:53px;line-height:53px;border-left:1px solid #ccc;position:relative;overflow:hidden;cursor:pointer;}
+#nav li a{display:block;font-size:16px;color:#414242;font-family:Microsoft YaHei;text-align:center;width:96px;height:110px;cursor:pointer;
+          position:absolute;top:0;left:0;}
+#nav li a.cur{top:-53px;}
+.nav a .txt{width:100%;display:block;}
+#nav .wm{width:106px;border-right:1px solid #ccc}
+#nav .wm a{border-right:1px solid #ccc;width:106px;}
+#nav li a:hover{text-decoration:none;background:#f0f0f0;background:-webkit-linear-gradient(top,#fff, #f0f0f0);}
+.nav{width:100%;border-bottom:1px solid #ccc;}
+#nav li span{width:100%;text-align:center;padding:10px 0;display:block;}
+#nav li span b{width:21px;height:18px;font-size:0;line-height:0;background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat -4px -144px;display:inline-block ! important;
+              }
+#nav li span u{color:#007d39;font-size:12px;display:block;line-height:18px;}
+#nav li .news b{width:17px;height:20px;background-position:-27px -144px;}
+#nav li .magazine b{width:19px;height:19px;background-position:-47px -144px;}
+#nav li .books b{width:16px;height:19px;background-position:-68px -144px;}
+#nav li .school b{width:19px;height:19px;background-position:-86px -144px;}
+#nav li .ivy b{width:18px;height:20px;background-position:-107px -144px;}
+#nav li .tmall b{width:27px;height:18px;background-position:-130px -144px;}
+#nav li .literary b{width:19px;height:18px;background-position:-161px -144px;}
+
+#loopWrap{margin:26px auto;overflow:hidden;}
+#loopWrap .left{width:320px; clear:left;}
+#loopWrap .left li a{font-size:14px;line-height:38px;}
+
+#loopWrap .left .impor h2 a{color:#333;font-size:16px;font-family:Microsoft YaHei;}
+#loopWrap .left .impor a{color:#999;font-size:12px;line-height:24px;}
+#loopWrap .impor{border-bottom:1px solid #e6e6e6;padding-bottom:16px;margin-bottom:16px;}
+#loopWrap .impor h2{margin-bottom:8px;font-weight:bold;}
+#loopWrap .impor a:hover{color:#333;}
+#loopWrap .impor h2 a:hover{color:#cc0009;}
+#loopWrap .left u,.wenxinWrap .cont li a u{display:inline-block;width:8px;height:8px;background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat 0 -87px;margin-right:7px;}
+#loopWrap .impor u{background-position:0 -77px;}
+
+#loopWrap .right{width:670px;height:485px;overflow:hidden;}
+.banner li a{display:block;width:100%;overflow:hidden;}
+.bannerWrap{height:382px;position:relative;overflow:hidden;}
+.bigImg{margin-bottom:10px;width:670px;height:382px;overflow:hidden;_zoom:1;position:absolute;left:0;top:0;}
+.bigImg li{position:absolute;width:670px;height:382px;overflow:hidden;opacity:0;filter:alpha(opacity=0);top:0;left:0;display:none;}
+.bigImg li.cur{opacity:1;filter:alpha(opacity=100);display:block;}
+.smallImg{width:104%;height:93px;overflow:hidden;_zoom:1;margin-top:10px;}
+.smallImg li{position:relative;}
+.smallImg span,.bigImg span{position:absolute;left:0;width:84%;padding:15px 8.1%;height:60px;background: #00883e;filter:alpha(opactiy=70);background: rgba(0,136,62,0.7);color:#fff;
+               -webkit-transition:0.5s;font-size:14px;line-height:20px;display:block;}
+.smallImg span{top:0;}
+.bigImg span{width:640px;line-height:36px;height:36px;bottom:-36px;padding:0 15px;}
+.smallImg li{float:left;margin-right:14px;-webkit-transition:0.5s;cursor:pointer;height:90px;overflow:hidden;}
+
+.smallImg li:hover span,.smallImg li.cur span{top:100%;}
+.wenxinWrap .left{width:720px;}
+.wenxinWrap .right{width:256px;}
+.wenxinWrap .right h3{line-height:34px;}
+.wenxinWrap .cont {width:325px;float:left;margin-right:25px;margin-bottom:20px;}
+.wenxinWrap .cont h3{border-bottom:3px solid #00883e;font-weight:normal;overflow:hidden;line-height:40px;}
+.wenxinWrap .cont h3 a,.rightCont h3{color:#333;font-size:20px;font-family:Microsoft YaHei;}
+.wenxinWrap .cont h3 a:hover,.contSeven h3 a:hover,.contEight h3 a:hover{color:#00883e;text-decoration:none;}
+.wenxinWrap .cont h3 span,.wenxinWrap .cont h3 span b{font-size:12px;color:#888;margin-left:40px;}
+.wenxinWrap .cont h3 span b{font-weight:normal;}
+.wenxinWrap .cont h3 span u{color:#cb0003;}
+.wenxinWrap .cont li a{font-size:14px;}
+.cont .open{padding:14px 0;margin-bottom:10px;overflow:hidden;_zoom:1;border-bottom:1px solid #e6e6e6;}
+.contOne .leftImg{width:70px;height:70px;float:left;}
+.contOne,.contTwo{height:340px;overflow:hidden;}
+.cont .rightTxt{width:245px;float:right;}
+.cont li.open .rightTxt a{font-size:14px;line-height:24px ! important;font-weight:bold;}
+.contOne .rightTxt span{display:block;color:#888;font-size:12px;margin-top:4px;line-height:16px;}
+.cont li,.wenxinWrap  .contOne li a{line-height:34px;display:block;}
+.wenxinWrap  .contOne h3 a{line-height:26px;}
+.contOne .rightTxt span b{color:#cb0003;font-weight:normal;margin-right:8px;}
+.contOne .open{padding: 0;padding-top: 14px;height: 84px;overflow:hidden;}
+.con.tOne .rightTxt span .xie{color:#00883e;margin-left:8px;}
+.wenxinWrap .contTwo,.wenxinWrap .contFour{width:369px;margin-right:0;}
+.contTwo ul{overflow:hidden;_zoom:1;padding:0;}
+.contTwo li{border-bottom:1px dotted #ccc;padding: 0 6px;padding-left:10px;width:351px;overflow:hidden;float:left;}
+.contTwo li.last{border:0;}
+.contTwo ul{border:1px solid #e6e6e6;border-top:0;}
+.contTwo .leftImg{float:left;width:73px;height:71px;display:none;}
+.contTwo .open .rightTxt{width:270px;}
+.contTwo .open{padding-top:5px;}
+.contTwo .rightTxt{width:100%;}
+.wenxinWrap .contTwo .rightTxt a{font-weight:normal;line-height:40px;display:block;}
+.contTwo .rightTxt span{font-size:14px;color:#cb0003;line-height:27px;display:none;}
+.contTwo .open{padding:20px 6px;margin-bottom:0;padding-left:10px;background:#f0f0f0;}
+.contTwo .open .leftImg,.contTwo .open .rightTxt span{display:block;}
+.contTwo .open .rightTxt a{line-height:24px;font-weight:bold;}
+.contTwo .open .rightTxt span{margin-top:5px;}
+.contThree .open b{color:#999;font-size:12px;font-weight:normal;margin-right:10px;line-height:26px;}
+.contThree .open{margin:0;padding:0;height:91px;overflow:hidden;margin:20px 0;}
+.contThree ul,.contFour ul{padding-top:20px;}
+.contFour .open .rightTxt a{font-size:16px;color:#222;font-weight:bold;display:block;font-family:Microsoft YaHei;}
+.contFour .open span{color:#cb0003;font-size:14px;}
+.contFour .open a:hover{color:#cb0003;}
+.contFour .open .rightTxt .tm,.contFour .open .rightTxt .wx{width:129px;height:28px;background:#00883e;border-bottom:3px solid #00642e;color:#fff;font-weight:normal;font-size:14px;
+                    line-height:30px;text-align:center;margin-top:10px;-webkit-transition:0.2s;-moz-transition:0.2s;transition:0.2s;}
+.contFour .open .rightTxt .tm:hover,.contFour .open .rightTxt .wx:hover{text-decoration:none;margin-left:5px;}
+.contThree,.contFour{height:486px;overflow:hidden;}
+.contFour .open{padding:20px 0 26px;border:0;margin-bottom:0;}
+.contThree .open span{margin-top:10px;display:block;}
+.advert{display:block;margin-top:20px;}
+.contFive li p{font-size:12px;line-height:30px;}
+.contFive li{border-bottom:1px solid #e6e6e6;padding:6px 0;}
+.contFive li.noborder{border:0;}
+.contFive li.first{font-weight:bold;font-size:14px;height:60px;background:#f0f0f0;}
+.wenxinWrap  .contFive li.first u{background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat -23px -66px;width:49px;height:34px;float:left;margin:13px 10px 0;}
+.contFive li.first a{float:left;line-height:60px;}
+.wenxinWrap .contSix{width:369px;margin-right:0;}
+.wenxinWrap .contSix h3 span{float:right;}
+.wenxinWrap .contSix h3 span a{font-weight:normal;margin-left:10px; color:#666;font-size:12px;font-family:"宋体";}
+.wenxinWrap .contSix h3 span a:hover{color:#cc0009;}
+.wenxinWrap .contSix h3 span{margin-left:0;}
+.contSix p{font-size:14px;line-height:24px;margin:20px 0;}
+.contSix h3 {overflow:hidden;_zoom:1;}
+.contSix h3 a{float:left;}
+.contSix .selSchool{padding:17px;background:#eee;}
+.contSix .selSchool li img{width:100px;height:64px;}
+.contSix ul{width:104%;overflow:hidden;_zoom:1;margin-top:14px;}
+.contSix li{width:100px;float:left;margin-right:16px;}
+.wenxinWrap .contSix li a{font-size:12px;line-height:30px;text-align:center;display:block;color:#333;}
+.wenxinWrap .contSix li a:hover{color:#cc0009;}
+.wenxinWrap .contSix div{color:#646464;font-size:12px;}
+.contSix div b{color:#00883e;font-size:14px;margin:0 3px;}
+.contSix div a{color:#969696;}
+.contFive,.contSix{height:355px;overflow:hidden;}
+.contSeven{margin-top:25px;overflow:hidden}
+.contSeven h3{margin-bottom:20px;}
+.contSeven h3,.contEight h3{font-size:20px;font-family:Microsoft YaHei;font-weight:normal;}
+.contSeven .read{border:1px solid #e6e6e6;overflow:hidden;_zoom:1;border-bottom:2px solid #e6e6e6;}
+.contSeven .read li{float:left;width:118px;height:36px;border-right:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
+.contSeven .read li a{display:block;width:118px;height:36px;line-height:36px;font-size:14px;text-align:center;
+                      -webkit-transition:background 0.3s;-moz-transition:background 0.3s;transition:background 0.3s;}
+.contSeven .read li a:hover,.contSeven .read li a.cur{color:#fff;text-decoration:none;background:#00883e;}
+.contSeven .read li.noborder{border-right:0;width:123px;}
+.contSeven .read li.noborder a{width:123px;}
+.bookList{overflow:hidden;_zoom:1;width:107%;margin:30px 0;}
+.bookList li{float:left;margin-right:51px;width:102px;height:auto;position:relative;overflow:hidden;cursor:pointer;}
+.bookList li .look{display:block;width:100%;height:142px;background:#00883e;filter:alpha(opacity=70);background:rgba(0,136,62,0.7);top:0;right:100%;position:absolute;text-align:center;}
+.bookList li u{display:inline-block;width:18px;height:18px;line-height:0;font-size:0;background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat -2px -111px;position:absolute;top:142px;left:50%;margin-left:-9px;}
+.bookList li span{font-size:14px;color:#fff;display:block;position:absolute;top:142px;left:50%;margin-left:-51px;width:102px;height:142px;}
+.bookList li .look:hover{text-decoration:none;}
+.bookList li p{font-size:14px;line-height:24px;overflow:hidden;_zoom:1;width:100%;}
+.bookList li p a{display:inline;line-height:32px;position:static;background:none;margin-top:10px;display:block;}
+.bookList li p b{font-size:12px;color:#555;font-weight:normal;float:left;}
+.bookList li p .money{color:#cc0009;float:right;}
+
+.contEight h3{border-bottom:3px solid #00883e;padding:5px 0;}
+.contEight .bookList li u{width:30px;height:24px;background-position:-30px -107px;}
+.contEight .bookList li{height:auto;}
+.contEight .bookList p{font-size:14px;line-height:24px;overflow:hidden;_zoom:1;width:100%;}
+.contEight .bookList p a{display:inline;line-height:32px;position:static;background:none;margin-top:10px;display:block;}
+.contEight .bookList p b{font-size:12px;color:#555;font-weight:normal;float:left;}
+.contEight .bookList p .money{color:#cc0009;float:right;}
+.rightCont{margin-bottom:20px;}
+.rightCont li u{display: inline-block;width: 8px;height: 8px;background: url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat 0 -97px;margin-right: 7px;}
+.rightCont li a{color:#555;line-height:28px;font-size:12px;}
+.rightCont h3{font-weight:normal;border-bottom:3px solid #00883e;padding-bottom:5px;margin-bottom:15px;}
+.rightCont h3 a:hover{color:#00883e;text-decoration:none;}
+.rightCont li a:hover{color:#cc0009;}
+.rightOne .juz{font-size:12px;color:#555;}
+.rightOne p span{color:#999;font-size:12px;}
+.rightOne p{line-height:18px;}
+.rightOne p b{color:#222;font-size:12px;}
+.rightOne p u{background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat -1px -63px;line-height:0;font-size:0;display:inline-block;width:10px;height:10px;margin:0 6px 0 3px;}
+.leftImg{float:left;}
+.rightImg{float:right;}
+.twoImg{overflow:hidden;_zoom:1;}
+.rightOne p.txt{margin:8px 0;}
+.rightThree ul{width:256px;height:256px;position:relative;}
+.rightThree li{width:256px;height:256px;position:absolute;top:0;left:0;opacity:0;}
+.rightThree li.cur{opacity:1;}
+.rightThree .imgWrap{width:256px;height:256px;overflow:hidden;}
+.rightThree .imgWrap span{position:absolute;bottom:0;left:0;display:block;width:100%;text-align:center;height:30px;line-height:30px;background:#00883e;filter:alpha(opacity=70);
+                          background:rgba(0,136,62,0.7);color:#fefefe;font-size:12px;cursor:pointer;}
+.rightFive ul{margin-top:10px;}
+
+
+
+#footer{margin:50px 0 10px;}
+.topFooter{width:100%;overflow:hidden;background:#f0f0f0;padding:40px 0 50px;}
+.topFooter  ul{overflow:hidden;width:105%;_zoom:1;}
+.topFooter li{float:left;margin-right:70px;}
+.topFooter li .app{width:82px;height:82px;background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat -176px -52px;margin-bottom:7px;}
+.topFooter li a{color:#666;}
+.topFooter p{color:#666;line-height:24px;font-size:12px;}
+.topFooter h3{color:#333;font-size:16px;line-height:28px;font-family:Microsoft YaHei;font-weight:normal;margin-bottom:14px;}
+.bottomFooter{width:100%;background:#262626;padding:30px 0;}
+.bottomFooter .left{width:35px;height:39px;background:url("icons.png"/*tpa=http://www.yilin.net.cn/images/icons.png*/) no-repeat -114px -67px;}
+.bottomFooter .right{width:965px;text-align:center;}
+.bottomFooter .right p{font-size:12px;color:#fff;line-height:24px;}
+/*侧边栏*/
+.sidebarWrap{width:115px;position:fixed;top:200px;right:2px;}
+.winxinWrap{padding:11px;background:#f1f2f3;}
+.winxinWrap p{color:#222;font-size:12px;line-height:18px;margin-top:10px;}
+.slideList a{display:block;font-size:12px;color:#fff;width:100%;height:39px;line-height:39px;text-align:center;-webkit-transition:0.2s;-moz-transition:0.2s;transition:0.2s;}
+.slideList{margin-top:25px;}
+.sidebarWrap li a{margin-top:10px;background:#f1f2f3;color:#222;}
+.sidebarWrap li a:hover{background:#00883e;color:#fff;}
+.bigCode{position:absolute;right:120px;top:0;border:1px solid #ddd;display:none;}
+.slideList a:hover{text-decoration:none;}
+.rightThree ul .arrLeft,.rightThree ul .arrRight{font-size:40px;width:20px;height:40px;display:block;position:absolute;top:40%;background:#555;opacity:0.6;filter:alpha(opacity=60);color:#fff;padding:5px;z-index:10;cursor:pointer;display:none;}
+.arrLeft{left:0;}
+.arrRight{right:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
