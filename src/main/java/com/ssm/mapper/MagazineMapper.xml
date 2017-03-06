@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssm.dao.MagazineMapper">
+	<sql id="magazineSql">
+	mid,mtype,mcover,mname,missue,mprice,missn,mpostcode,mpublishdate,status
+	</sql>
+	<!-- selectAll -->
+	<select id="selectAll" resultType="magazine" parameterType="magazine">
+		select
+		<include refid="magazineSql"/>
+		 from magazine 
+		 <where>
+		 <if test="mname!=null">mname=#{mname}</if>
+		 </where>
+		 
+	</select>
+
+	<!-- selectGoods -->
+	<select id="select" resultType="magazine" parameterType="magazine">
+		select
+		<include refid="magazineSql"/>
+		 from magazine where mid = #{mid}
+	</select>
+	
+
+	<!-- addArticle -->
+	<insert id="add" parameterType="magazine">
+		insert into magazine
+		(mid,mtype,mcover,mname,missue,mprice,missn,mpostcode,mpublishdate,status) values
+		 (#{mid},#{mtype},#{mcover},#{mname},#{missue},#{mprice},#{missn},#{mpostcode},#{mpublishdate},#{status})
+	</insert>
+
+	<!-- deleteGoods -->
+	<delete id="del" parameterType="magazine">
+		delete from magazine where mid
+		= #{mid}
+	</delete>
+
+
+	<!-- updateArticle -->
+	<update id="update" parameterType="magazine">
+		update magazine
+		<set>
+			<if test="mtype!=null">mtype=#{mtype},</if>
+			<if test="mname!=null">mname=#{mname},</if>
+			<if test="status!=null">status=#{status},</if>
+		</set>
+		where mid = #{mid}
+	</update>
+</mapper>  

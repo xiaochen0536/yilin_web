@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssm.dao.UserMapper">
+	<sql id="userSql1">
+	 sid,uname,upassword,umail,status
+	</sql>
+	<!-- selectAll -->
+	<select id="selectAll" resultType="user" parameterType="user">
+		select
+		<include refid="userSql1"/>
+		 from userone 
+		 <where>
+		 <if test="uname!=null">uname=#{uname}</if>
+		 </where>
+		 
+	</select>
+
+	<!-- select -->
+	<select id="select" resultType="user" parameterType="user">
+		select
+		<include refid="userSql1"/>
+		 from userone where sid = #{sid}
+	</select>
+	
+	<!-- login -->
+	<select id="login" parameterType="user" resultType="user">
+		select
+		<include refid="userSql1"/>
+		 from userone where uname=#{uname} and upassword=#{upassword}
+	</select>
+
+	<!-- add -->
+	<insert id="add" parameterType="user">
+		insert into userone
+		(sid,uname,upassword,umail,status) values
+		 (#{sid},#{uname},#{upassword},#{umail},#{status})
+	</insert>
+
+	<!-- delete -->
+	<delete id="del" parameterType="user">
+		delete from userone where sid
+		= #{sid}
+	</delete>
+
+
+	<!-- update -->
+	<update id="update" parameterType="user">
+		update userone
+		<set>
+			<if test="uname!=null">uname=#{uname},</if>
+			<if test="upassword!=null">upassword=#{upassword},</if>
+			<if test="status!=null">status=#{status},</if>
+		</set>
+		where sid = #{sid}
+	</update>
+	
+	
+</mapper>  

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssm.dao.ArticleMapper">
+	<sql id="articleSql">
+	aid,atitle,acontent,aauthor,mid
+	</sql>
+	<!-- selectAll -->
+	<select id="selectAll" resultType="article" parameterType="article">
+		select
+		<include refid="articleSql"/>
+		 from article 
+		 <where>
+		 <if test="aauthor!=null">aauthor=#{aauthor}</if>
+		 </where>
+		 
+	</select>
+
+	<!-- selectGoods -->
+	<select id="select" resultType="article" parameterType="article">
+		select
+		<include refid="articleSql"/>
+		 from article where aid = #{aid}
+	</select>
+	
+
+	<!-- addArticle -->
+	<insert id="add" parameterType="article">
+		insert into article
+		(aid,atitle,acontent,aauthor,mid) values
+		 (#{aid},#{atitle},#{acontent},#{aauthor},#{mid})
+	</insert>
+
+	<!-- deleteGoods -->
+	<delete id="del" parameterType="article">
+		delete from article where aid
+		= #{aid}
+	</delete>
+
+
+	<!-- updateArticle -->
+	<update id="update" parameterType="article">
+		update article set 
+		atitle = #{atitle},acontent = #{acontent},aauthor = #{aauthor},mid = #{mid}
+		where aid = #{aid}
+	</update>
+</mapper>  

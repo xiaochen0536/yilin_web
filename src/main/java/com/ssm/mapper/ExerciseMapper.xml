@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssm.dao.ExerciseMapper">
+	<sql id="exerciseSql">
+	 eid,epicture1,epicture2,econtent,epublishdate,eholddate,etitle,ecount
+	</sql>
+	<!-- selectAll -->
+	<select id="selectAll" resultType="exercise" parameterType="exercise">
+		select
+		<include refid="exerciseSql"/>
+		 from exercise 
+		 <where>
+		 <if test="etitle!=null">etitle=#{etitle}</if>
+		 </where>
+		 
+	</select>
+
+	<!-- select -->
+	<select id="select" resultType="exercise" parameterType="exercise">
+		select
+		<include refid="exerciseSql"/>
+		 from exercise where eid = #{eid}
+	</select>
+	
+
+	<!-- add -->
+	<insert id="add" parameterType="exercise">
+		insert into exercise
+		(eid,epicture1,epicture2,econtent,epublishdate,eholddate,etitle,ecount) values
+		 (#{eid},#{epicture1},#{epicture2},#{econtent},#{epublishdate},#{eholddate},#{etitle},#{ecount})
+	</insert>
+
+	<!-- delete -->
+	<delete id="del" parameterType="exercise">
+		delete from exercise where eid
+		= #{eid}
+	</delete>
+
+
+	<!-- update -->
+	<update id="update" parameterType="exercise">
+		update exercise
+		<set>
+			<if test="econtent!=null">econtent=#{econtent},</if>
+			<if test="etitle!=null">etitle=#{etitle},</if>
+			<if test="ecount!=null">ecount=#{ecount},</if>
+		</set>
+		where eid = #{eid}
+	</update>
+</mapper>  

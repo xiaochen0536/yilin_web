@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssm.dao.NewsMapper">
+	<sql id="newsSql">
+	nid,ntitle,ncontent,ntime,nauthor,ncount,nsummary,npicture,ntype
+	</sql>
+	<!-- selectAll -->
+	<select id="selectAll" resultType="news" parameterType="news">
+		select
+		<include refid="newsSql"/>
+		 from news 
+		 <where>
+		 <if test="ntitle!=null">ntitle=#{ntitle}</if>
+		 </where>
+		 
+	</select>
+
+	<!-- selectGoods -->
+	<select id="select" resultType="news" parameterType="news">
+		select
+		<include refid="newsSql"/>
+		 from news where nid = #{nid}
+	</select>
+	
+
+	<!-- addArticle -->
+	<insert id="add" parameterType="news">
+		insert into news
+		(nid,ntitle,ncontent,ntime,nauthor,ncount,nsummary,npicture,ntype) values
+		 (#{nid},#{ntitle},#{ncontent},#{ntime},#{nauthor},#{ncount},#{nsummary},#{npicture},#{ntype})
+	</insert>
+
+	<!-- deleteGoods -->
+	<delete id="del" parameterType="news">
+		delete from news where nid
+		= #{nid}
+	</delete>
+
+
+	<!-- updateArticle -->
+	<update id="update" parameterType="news">
+		update news 
+		<set>
+			<if test="ntitle!=null">ntitle = #{ntitle},</if>
+			<if test="ncontent!=null">ncontent = #{ncontent},</if>
+			<if test="nauthor!=null">nauthor = #{nauthor},</if>
+			<if test="ncount!=null">ncount = #{ncount},</if>
+		</set>
+		where nid = #{nid}
+	</update>
+</mapper>  

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssm.dao.AddressMapper">
+	<sql id="addressSql">
+	did,utname,utaddress1,utaddress2,utmail,uttel,sid
+	</sql>
+	<!-- selectAll -->
+	<select id="selectAll" resultType="address" parameterType="address">
+		select
+		<include refid="addressSql"/>
+		 from address 
+		 <where>
+		 <if test="utname!=null">utname=#{utname}</if>
+		 </where>
+		 
+	</select>
+
+	<!-- selectAddress -->
+	<select id="select" resultType="address" parameterType="address">
+		select
+		<include refid="addressSql"/>
+		 from address where did = #{did}
+	</select>
+	
+
+	<!-- addAddress -->
+	<insert id="add" parameterType="address">
+		insert into address
+		(did,utname,utaddress1,utaddress2,utmail,uttel,sid) values
+		 (#{did},#{utname},#{utaddress1},#{utaddress2},#{utmail},#{uttel},#{sid})
+	</insert>
+
+	<!-- deleteAddress -->
+	<delete id="del" parameterType="address">
+		delete from address where did
+		= #{did}
+	</delete>
+
+
+	<!-- updateAddress -->
+	<update id="update" parameterType="address">
+		update address set 
+		utaddress1 = #{utaddress1},utaddress2 = #{utaddress2},utmail = #{utmail},uttel = #{uttel}
+		where did = #{did}
+	</update>
+</mapper>  

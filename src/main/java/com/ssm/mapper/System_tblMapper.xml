@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssm.dao.System_tblMapper">
+	<sql id="system_tblSql">
+	 yid,state,sdate
+	</sql>
+	<!-- selectAll -->
+	<select id="selectAll" resultType="system_tbl" parameterType="system_tbl">
+		select
+		<include refid="system_tblSql"/>
+		 from system_tbl 
+		 <where>
+		 <if test="state!=null">state=#{state}</if>
+		 </where>
+		 
+	</select>
+
+	<!-- select -->
+	<select id="select" resultType="system_tbl" parameterType="system_tbl">
+		select
+		<include refid="system_tblSql"/>
+		 from system_tbl where yid = #{yid}
+	</select>
+	
+
+	<!-- add -->
+	<insert id="add" parameterType="system_tbl">
+		insert into system_tbl
+		(yid,state,sdate) values
+		 (#{yid},#{state},#{sdate})
+	</insert>
+
+	<!-- delete -->
+	<delete id="del" parameterType="system_tbl">
+		delete from system_tbl where yid
+		= #{yid}
+	</delete>
+
+
+	<!-- update -->
+	<update id="update" parameterType="system_tbl">
+		update system_tbl
+		<set>
+			<if test="state!=null">state=#{state},</if>
+			<if test="sdate!=null">sdate=#{sdate},</if>
+			
+		</set>
+		where yid = #{yid}
+	</update>
+</mapper>  

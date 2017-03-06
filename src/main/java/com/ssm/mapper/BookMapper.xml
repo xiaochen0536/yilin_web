@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssm.dao.BookMapper">
+	<sql id="bookSql">
+	bid, bname, bintrodution,btitle, bpublishdate,bauthor,bcount
+	</sql>
+	<!-- selectAll -->
+	<select id="selectAll" resultType="book" parameterType="book">
+		select
+		<include refid="bookSql"/>
+		 from book 
+		 <where>
+		 <if test="bname!=null">bname=#{bname}</if>
+		 </where>
+		 
+	</select>
+
+	<!-- select -->
+	<select id="select" resultType="book" parameterType="book">
+		select
+		<include refid="bookSql"/>
+		 from book where bid = #{bid}
+	</select>
+	
+	
+	<!-- add -->
+	<insert id="add" parameterType="book">
+		insert into book
+		(bid, bname, bintrodution,btitle, bpublishdate,bauthor,bcount) values
+		 (#{bid},#{bname},#{bintrodution},#{btitle},#{bpublishdate},#{bauthor},#{bcount})
+	</insert>
+
+	<!-- delete -->
+	<delete id="del" parameterType="book">
+		delete from book where bid
+		= #{bid}
+	</delete>
+
+
+	<!-- update -->
+	<update id="update" parameterType="book">
+		update book set 
+		bname = #{bname},bintrodution = #{bintrodution},btitle = #{btitle},bauthor = #{bauthor}
+		where bid = #{bid}
+	</update>
+</mapper>  
