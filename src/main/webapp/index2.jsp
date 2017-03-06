@@ -70,7 +70,7 @@ a:hover {
 						<div class="btn_dyrss">
 						
 							<a
-								href="javascript:if(confirm('http://mail.qq.com/cgi-bin/bookcol?colid=20171  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://mail.qq.com/cgi-bin/bookcol?colid=20171'"
+								href="javascript:if(confirm('http://mail.qq.com/cgi-bin/bookcol?colid=20171 '))window.location='http://mail.qq.com/cgi-bin/bookcol?colid=20171'"
 								target="_blank"> <img src="image/btn_dyrss.gif" alt="订阅到QQ邮箱"
 								border="0" />
 							</a>
@@ -79,35 +79,29 @@ a:hover {
 
 					</div>
 				</div>
-				<div class="right">
-					<div class="headerNav">
-						<div id="NoLong" style="float: left; width: 277px;">
+			<div class="right">
+            <div class="headerNav">
+            <div id="NoLong" style="float:left;width:277px;">
+	
+                <a href="login2.jsp"  class="login">登录</a><a href="register2.jsp" 
+                    class="register"> 免费注册</a>
+             
+</div>
 
-							<a href="Login.aspx.htm" class="login">登录</a><a
-								href="Register.aspx.htm" class="register"> 免费注册</a>
-
-						</div>
-
-
-						<a
-							href="javascript:if(confirm('http://3g.yilin.net.cn/  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://3g.yilin.net.cn/'"
-							href="javascript:void(0);"
-							onclick="AddFavorite('意林','index.htm'/*tpa=http://www.yilin.net.cn/*/)">收藏本站</a>
-						<input name="ctl00$txt_keyWork" type="text" id="txt_keyWork"
-							class="seachTxt" placeholder="搜索" /> <a id="LinkButton1"
-							class="seachBtn"
-							href="javascript:__doPostBack(&#39;ctl00$LinkButton1&#39;,&#39;&#39;)"><u></u></a>
-
-
-					</div>
-					<script src="js/Save.js" type="text/javascript"></script>
-					<div class="zdWrap">
-						<a
-							href="javascript:if(confirm('https://yllzts.tmall.com/p/yudin2016.htm  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/p/yudin2016.htm'"
-							target="_blank" class="zd"><img src="image/index.png"/></a>
-					</div>
-				</div>
-			</div>
+             
+                    <a href="javascript:if(confirm('http://3g.yilin.net.cn/  '))window.location='http://3g.yilin.net.cn/'" target="_blank">手机客户端</a><a href="javascript:void(0);" onclick="AddFavorite('意林','index.htm'/*tpa=http://www.yilin.net.cn/*/)">收藏本站</a>
+                    <input name="ctl00$txt_keyWork" type="text" id="txt_keyWork" class="seachTxt" placeholder="搜索" />
+                    <a id="LinkButton1" class="seachBtn" href="javascript:__doPostBack(&#39;ctl00$LinkButton1&#39;,&#39;&#39;)"><u></u></a>
+                   
+                    
+            </div>
+            <script src="Save.js"  type="text/javascript"></script>
+            <div class="zdWrap">
+                <a href="javascript:if(confirm('https://yllzts.tmall.com/p/yudin2016.htm '))window.location='https://yllzts.tmall.com/p/yudin2016.htm'"  target="_blank" class="zd">
+                <img src="image/index.png" style="margin: 3px;"/></a>
+            </div>
+        </div>
+    </div>
 			<div id="nav">
 				<div class="nav">
 					<ul>
