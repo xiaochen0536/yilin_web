@@ -2,24 +2,30 @@ package com.ssm.entity;
 
 import java.util.Date;
 
+/**
+ * 
+ * @author 
+ * Administrator
+ * 2017年3月4日
+ * 新闻类
+ */
 public class News {
-	private Integer nid;
-	private String ntitle;
-	private String ncontent;
-	private Date ntime;
-	private String nauthor;
-	private String ncount;
-	private String nsummary;
-	private String npic;
-	private String ntype;
-	private Integer status;
+	private Integer nid;		//新闻ID
+	private String ntitle;		//新闻标题
+	private String ncontent;	//新闻内容
+	private Date ntime;			//发布日期
+	private String nauthor;		//作者
+	private String ncount;		//点击量
+	private String nsummary;	//作者
+	private String npic;		//新闻图片地址
+	private String ntype;		//新闻类型
+	private Integer status;		//开关
+	
 	
 	public News() {
 		super();
 	}
 	
-	
-
 	public News(Integer nid, String ntitle, String ncontent, Date ntime, String nauthor, String ncount, String nsummary,
 			String npic, String ntype, Integer status) {
 		super();
@@ -34,8 +40,15 @@ public class News {
 		this.ntype = ntype;
 		this.status = status;
 	}
+	
+	
+	public Integer getStatus() {
+		return status;
+	}
 
-
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
 
 	public Integer getNid() {
 		return nid;
@@ -79,43 +92,25 @@ public class News {
 	public void setNsummary(String nsummary) {
 		this.nsummary = nsummary;
 	}
-	
 	public String getNpic() {
 		return npic;
 	}
-
-
-
 	public void setNpic(String npic) {
 		this.npic = npic;
 	}
-
-
-
 	public String getNtype() {
 		return ntype;
 	}
 	public void setNtype(String ntype) {
 		this.ntype = ntype;
 	}
-	
-	public Integer getStatus() {
-		return status;
-	}
-
-	public void setStatus(Integer status) {
-		this.status = status;
-	}
-
-
 
 	@Override
 	public String toString() {
 		return "News [nid=" + nid + ", ntitle=" + ntitle + ", ncontent=" + ncontent + ", ntime=" + ntime + ", nauthor="
-				+ nauthor + ", ncount=" + ncount + ", nsummary=" + nsummary + ", npic=" + npic + ", ntype=" + ntype
-				+ ", status=" + status + "]";
+				+ nauthor + ", ncount=" + ncount + ", nsummary=" + nsummary + ", npic=" + npic + ", ntype="
+				+ ntype + ", status=" + status + "]";
 	}
-
 	
 	
 }

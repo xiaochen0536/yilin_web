@@ -4,20 +4,22 @@
 
 <mapper namespace="com.ssm.dao.NewsMapper">
 	<sql id="newsSql">
-	nid,ntitle,ncontent,ntime,nauthor,ncount,nsummary,npicture,ntype
+	nid,ntitle,ncontent,ntime,nauthor,ncount,nsummary,npic,ntype
 	</sql>
 	<!-- selectAll -->
+	<!-- 新闻遍历 或 模糊查询 -->
 	<select id="selectAll" resultType="news" parameterType="news">
 		select
 		<include refid="newsSql"/>
 		 from news 
 		 <where>
-		 <if test="ntitle!=null">ntitle=#{ntitle}</if>
+		 <if test="ntitle!=null">ntitle like '%${ntitle}%'</if>
 		 </where>
 		 
 	</select>
 
 	<!-- selectGoods -->
+	<!-- 根据id查询 -->
 	<select id="select" resultType="news" parameterType="news">
 		select
 		<include refid="newsSql"/>
@@ -26,13 +28,15 @@
 	
 
 	<!-- addArticle -->
+	<!-- 增加新闻 -->
 	<insert id="add" parameterType="news">
 		insert into news
 		(nid,ntitle,ncontent,ntime,nauthor,ncount,nsummary,npicture,ntype) values
-		 (#{nid},#{ntitle},#{ncontent},#{ntime},#{nauthor},#{ncount},#{nsummary},#{npicture},#{ntype})
+		 (#{nid},#{ntitle},#{ncontent},#{ntime},#{nauthor},#{ncount},#{nsummary},#{npic},#{ntype})
 	</insert>
 
 	<!-- deleteGoods -->
+	<!-- 根据id删除新闻 -->
 	<delete id="del" parameterType="news">
 		delete from news where nid
 		= #{nid}
@@ -40,6 +44,7 @@
 
 
 	<!-- updateArticle -->
+	<!-- 修改新闻 -->
 	<update id="update" parameterType="news">
 		update news 
 		<set>
@@ -51,3 +56,4 @@
 		where nid = #{nid}
 	</update>
 </mapper>  
+
