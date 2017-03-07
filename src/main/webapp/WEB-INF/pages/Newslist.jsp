@@ -20,28 +20,20 @@
 
 	<table border="1">
 	<tr>
-	<th>nid</th>
 	<th>ntitle</th>
-	<th>ncontent</th>
 	<th>ntime</th>
 	<th>nauthor</th>
 	<th>ncount</th>
 	<th>nsummary</th>
-	<th>npic</th>
-	<th>ntype</th>
 	
 	</tr>
 	<c:forEach items="${NewsList }" var="n">
 	<tr>
-	<td>${n.nid }</td>
-	<td>${n.ntitle }</td>
-	<td>${n.ncontent }</td>
+	<td><a href="${basePath }details?nid=${n.nid }">${n.ntitle }</a></td>
 	<td><fmt:formatDate value="${n.ntime }" type="date" pattern="yyyy-MM-dd HH:mm:ss"/></td>
 	<td>${n.nauthor }</td>
 	<td>${n.ncount }</td>
 	<td>${n.nsummary }</td>
-	<td>${n.npic }</td>
-	<td>${n.ntype }</td>
 	</tr>
 	</c:forEach>
 	</table>

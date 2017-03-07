@@ -15,7 +15,7 @@ public class News {
 	private String ncontent;	//新闻内容
 	private Date ntime;			//发布日期
 	private String nauthor;		//作者
-	private String ncount;		//点击量
+	private Integer ncount;		//点击量
 	private String nsummary;	//作者
 	private String npic;		//新闻图片地址
 	private String ntype;		//新闻类型
@@ -26,7 +26,7 @@ public class News {
 		super();
 	}
 	
-	public News(Integer nid, String ntitle, String ncontent, Date ntime, String nauthor, String ncount, String nsummary,
+	public News(Integer nid, String ntitle, String ncontent, Date ntime, String nauthor, Integer ncount, String nsummary,
 			String npic, String ntype, Integer status) {
 		super();
 		this.nid = nid;
@@ -80,10 +80,10 @@ public class News {
 	public void setNauthor(String nauthor) {
 		this.nauthor = nauthor;
 	}
-	public String getNcount() {
+	public Integer getNcount() {
 		return ncount;
 	}
-	public void setNcount(String ncount) {
+	public void setNcount(Integer ncount) {
 		this.ncount = ncount;
 	}
 	public String getNsummary() {

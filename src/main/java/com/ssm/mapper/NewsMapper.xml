@@ -31,7 +31,7 @@
 	<!-- 增加新闻 -->
 	<insert id="add" parameterType="news">
 		insert into news
-		(nid,ntitle,ncontent,ntime,nauthor,ncount,nsummary,npicture,ntype) values
+		(nid,ntitle,ncontent,ntime,nauthor,ncount,nsummary,npic,ntype) values
 		 (#{nid},#{ntitle},#{ncontent},#{ntime},#{nauthor},#{ncount},#{nsummary},#{npic},#{ntype})
 	</insert>
 

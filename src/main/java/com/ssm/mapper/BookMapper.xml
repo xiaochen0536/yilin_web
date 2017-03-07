@@ -42,7 +42,7 @@
 	<!-- update -->
 	<update id="update" parameterType="book">
 		update book set 
-		bname = #{bname},bintrodution = #{bintrodution},btitle = #{btitle},bauthor = #{bauthor}
+		bname = #{bname},bintrodution = #{bintrodution},btitle = #{btitle},bauthor = #{bauthor},bcount=#{bcount}
 		where bid = #{bid}
 	</update>
 </mapper>  

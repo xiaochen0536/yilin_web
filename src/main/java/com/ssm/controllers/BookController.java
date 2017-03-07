@@ -35,8 +35,7 @@ public class BookController {
 	public ModelAndView bookDetail(@ModelAttribute Book book ){
 		Book book1=bookService.select(book.getBid()); //根据图书id展示詳細信息
 		book1.setBcount(book1.getBcount()+1); 
-		int i=bookService.update(book1);
-		System.out.println("改了之后的"+i);
+		bookService.update(book1);
 		Book book2=bookService.select(book.getBid());
 		ModelAndView modelAndView=new ModelAndView();
 		modelAndView.addObject("bd", book2).setViewName("listDetail");
