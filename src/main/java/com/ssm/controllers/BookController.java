@@ -14,7 +14,6 @@ import com.ssm.service.impl.BookService;
 @Controller
 @RequestMapping("book")
 public class BookController {
-
 	@Autowired
 	private BookService bookService;
 	//1 展示所有图书信息的功能
@@ -31,8 +30,7 @@ public class BookController {
 		return "booklist";
 	}
 
-	// 2根据展示圖書詳細信息的功能
-	
+	// 2根据图书id展示詳細信息的功能
 	@RequestMapping("listDetail")
 	public ModelAndView bookDetail(@ModelAttribute Book book ){
 		Book book1=bookService.select(book.getBid());
