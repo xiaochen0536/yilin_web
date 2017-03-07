@@ -7,7 +7,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
-	<mvc:annotation-driven conversion-service="conversionService" validator="validator" />
+	<mvc:annotation-driven conversion-service="conversionServicea" validator="validator" />
 	<mvc:interceptors>
 		<mvc:interceptor>
 		<mvc:mapping path="/**"/>
@@ -46,7 +46,7 @@
 		<property name="cacheSeconds" value="120" />
 	</bean>
 	<!-- 1.注册ConversionService -->
-	<bean id="conversionService"
+	<bean id="conversionServicea"
 		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
 		<property name="converters">
 			<list>
@@ -60,7 +60,7 @@
 	<!-- 2.使用ConfigurableWebBindingInitializer注册conversionService -->
 	<bean id="webBindingInitializer"
 		class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer">
-		<property name="conversionService" ref="conversionService" />
+		<property name="conversionService" ref="conversionServicea" />
 		<property name="validator" ref="validator" />
 	</bean>
 
