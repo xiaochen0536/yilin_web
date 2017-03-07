@@ -30,11 +30,11 @@ public class BookController {
 		return "booklist";
 	}
 
-	// 2根据图书id展示詳細信息的功能
+	// 2根据图书id展示詳細信息的功能以及点击率
 	@RequestMapping("listDetail")
 	public ModelAndView bookDetail(@ModelAttribute Book book ){
-		Book book1=bookService.select(book.getBid());
-		book1.setBcount(book1.getBcount()+1);
+		Book book1=bookService.select(book.getBid()); //根据图书id展示詳細信息
+		book1.setBcount(book1.getBcount()+1); 
 		int i=bookService.update(book1);
 		System.out.println("改了之后的"+i);
 		Book book2=bookService.select(book.getBid());
@@ -56,8 +56,8 @@ public class BookController {
 	public ModelAndView listLike(@ModelAttribute Book book){
 		ModelAndView model=new ModelAndView();
 		List<Book> list =bookService.selectAll(book);
-		model.addObject("like",list ).setViewName("listTitle");
+		model.addObject("bl",list ).setViewName("likelist");
+		System.out.println(list.isEmpty());
 		return model;
 	}
-	
 }

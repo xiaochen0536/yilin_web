@@ -12,7 +12,7 @@
 		<include refid="bookSql"/>
 		 from book 
 		 <where>
-		 <if test="bname!=null">bname=#{bname}</if>
+		 <if test="btitle!=null">btitle like '%${btitle}%'</if>
 		 </where>
 		 
 	</select>

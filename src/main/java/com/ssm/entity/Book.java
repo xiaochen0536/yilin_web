@@ -9,14 +9,14 @@ public class Book {
 	private String btitle;
 	private Date bpublishdate;
 	private String bauthor;
-	private String bcount;
+	private Integer bcount;
 	private Integer status;
 	
 	public Book() {
 		super();
 	}
 	public Book(Integer bid, String bname, String bintrodution, String btitle, Date bpublishdate, String bauthor,
-			String bcount) {
+			Integer  bcount) {
 		super();
 		this.bid = bid;
 		this.bname = bname;
@@ -62,10 +62,10 @@ public class Book {
 	public void setBauthor(String bauthor) {
 		this.bauthor = bauthor;
 	}
-	public String getBcount() {
+	public Integer getBcount() {
 		return bcount;
 	}
-	public void setBcount(String bcount) {
+	public void setBcount(Integer  bcount) {
 		this.bcount = bcount;
 	}
 	public Integer getStatus() {
