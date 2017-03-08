@@ -17,6 +17,25 @@
 		 </where>
 		 
 	</select>
+	
+	<!-- 分页查询 -->
+	<select id="paging" resultType="news" parameterType="HashMap">
+		select * from
+		(
+		   select a.*, rownum rn
+		   from (select <include refid="newsSql"/> from news) a
+		)
+		where rn between #{a} and #{b}
+		
+		
+<!-- 		select * FROM
+			(
+			   SELECT A.*, ROWNUM RN
+			   FROM (SELECT * FROM TABLE_NAME) A			
+			   WHERE ROWNUM <= 40			
+			)		
+		WHERE RN >= 21 -->
+	</select>
 
 	<!-- selectGoods -->
 	<!-- 根据id查询 -->

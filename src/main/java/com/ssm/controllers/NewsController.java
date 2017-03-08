@@ -3,6 +3,7 @@ package com.ssm.controllers;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -19,13 +20,13 @@ public class NewsController {
 	
 	//新闻查询
 	@ModelAttribute("NewsList")
-	public List<News> list(@ModelAttribute News news){
+	public List<News> list(@ModelAttribute News news, Integer i){
+		System.out.println("前台接收到的"+i);
 		List<News> list = new ArrayList<News>();
-		if(news==null){
-			list = newsService.selectAll(null);
-		}else {
-			list = newsService.selectAll(news);
+		if(i==null){
+			i=1;
 		}
+		list = newsService.paging(news, i);
 		return list;
 	}
 	//跳转
