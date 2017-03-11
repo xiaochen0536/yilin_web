@@ -23,6 +23,7 @@
 		select * from
 		(
 		   select a.*, rownum rn
+		   <!-- 语句写在最内层括号里 -->
 		   from (select <include refid="newsSql"/> from news
 		   	<where>
 		 	<if test="News.ntitle!=null">ntitle like '%${News.ntitle}%'</if>
@@ -30,15 +31,6 @@
 		   ) a
 		)
 		where rn between #{a} and #{b}
-		
-		
-<!-- 		select * FROM
-			(
-			   SELECT A.*, ROWNUM RN
-			   FROM (SELECT * FROM TABLE_NAME) A			
-			   WHERE ROWNUM <= 40			
-			)		
-		WHERE RN >= 21 -->
 	</select>
 
 	<!-- selectGoods -->

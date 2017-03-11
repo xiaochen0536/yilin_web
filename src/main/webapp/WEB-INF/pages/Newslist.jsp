@@ -14,30 +14,35 @@
 </head>
 <body>
 	<form action="${basePath }login" method="get">
-		<input type="text" name="ntitle" value="${NewsList.ntitle }"/>
-		<input type="text" name="i" value="${NewsList.i }"/>
+		<!-- 获得模糊查询默认值 -->
+		<input type="text" name="ntitle" value="${NewsList.ntitle }"/>	
+		<!-- 获得页数默认值 -->
+		<input type="text" name="i" value="${NewsList.i }"/>			
 		<input type="submit" value="搜索"/>
 	</form>
+	
 	<a href="${basePath }login?ntitle=${NewsList.ntitle }&i=${NewsList.i -1}">上一页</a>
 	<a href="${basePath }login?ntitle=${NewsList.ntitle }&i=${NewsList.i +1}">下一页</a>
-	<table border="1">
-	<tr>
-	<th>ntitle</th>
-	<th>ntime</th>
-	<th>nauthor</th>
-	<th>ncount</th>
-	<th>nsummary</th>
 	
-	</tr>
-	<c:forEach items="${NewsList.list}" var="n">
-	<tr>
-	<td><a href="${basePath }details?nid=${n.nid }">${n.ntitle }</a></td>
-	<td><fmt:formatDate value="${n.ntime }" type="date" pattern="yyyy-MM-dd HH:mm:ss"/></td>
-	<td>${n.nauthor }</td>
-	<td>${n.ncount }</td>
-	<td>${n.nsummary }</td>
-	</tr>
-	</c:forEach>
+	<table border="1">
+		<tr>
+			<th>ntitle</th>
+			<th>ntime</th>
+			<th>nauthor</th>
+			<th>ncount</th>
+			<th>nsummary</th>
+		</tr>
+	
+		<!-- 根据“list”键去取list -->
+		<c:forEach items="${NewsList.list}" var="n">
+			<tr>
+				<td><a href="${basePath }details?nid=${n.nid }">${n.ntitle }</a></td>
+				<td><fmt:formatDate value="${n.ntime }" type="date" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+				<td>${n.nauthor }</td>
+				<td>${n.ncount }</td>
+				<td>${n.nsummary }</td>
+			</tr>
+		</c:forEach>
 	</table>
 </body>
 </html>
