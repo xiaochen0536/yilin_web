@@ -12,7 +12,7 @@
 		<include refid="exerciseSql"/>
 		 from exercise 
 		 <where>
-		 <if test="etitle!=null"> etitle = #{etitle}</if>
+		 <if test="etitle!=null">etitle=#{etitle}</if>
 		 </where>
 		 
 	</select>
@@ -21,9 +21,10 @@
 	<select id="select" resultType="exercise" parameterType="exercise">
 		select
 		<include refid="exerciseSql"/>
-		 from exercise  where eid = #{eid,jdbcType=NUMERIC}
+		 from exercise where eid = #{eid}
 	</select>
 	
+
 	<!-- add -->
 	<insert id="add" parameterType="exercise">
 		insert into exercise

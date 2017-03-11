@@ -3,7 +3,6 @@ package com.ssm.entity;
 import java.util.Date;
 
 public class Exercise {
-	//活动表一个字段错了  ecount为Integer类型
 	private Integer eid;
 	private String epicture1;
 	private String epicture2;
@@ -11,7 +10,7 @@ public class Exercise {
 	private Date epublishdate;
 	private Date eholddate;
 	private String etitle;
-	private Integer ecount;
+	private String ecount;
 	public Integer getEid() {
 		return eid;
 	}
@@ -54,10 +53,10 @@ public class Exercise {
 	public void setEtitle(String etitle) {
 		this.etitle = etitle;
 	}
-	public Integer getEcount() {
+	public String getEcount() {
 		return ecount;
 	}
-	public void setEcount(Integer ecount) {
+	public void setEcount(String ecount) {
 		this.ecount = ecount;
 	}
 	

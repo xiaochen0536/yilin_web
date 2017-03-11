@@ -1,9 +1,9 @@
 package com.ssm.controllers;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-
-import org.apache.ibatis.annotations.Param;
+import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -20,14 +20,27 @@ public class NewsController {
 	
 	//新闻查询
 	@ModelAttribute("NewsList")
-	public List<News> list(@ModelAttribute News news, Integer i){
+	public Map<String, Object> list(@ModelAttribute News news, Integer i){
+		Map<String, Object> map = new HashMap<>();
+		map.put("ntitle", news.getNtitle());
 		System.out.println("前台接收到的"+i);
 		List<News> list = new ArrayList<News>();
-		if(i==null){
+		list = newsService.selectAll(news);
+		System.out.println("list长度"+list.size());
+		if(i==null||i<=1){
 			i=1;
 		}
+		if(i>list.size()/5) {
+			i=list.size()/5;
+			if(list.size()%5>1){
+				i=list.size()/5+1;
+			}	
+		}
+		System.out.println("判断后i="+i);
 		list = newsService.paging(news, i);
-		return list;
+		map.put("i", i);
+		map.put("list", list);
+		return map;
 	}
 	//跳转
 	@RequestMapping("login")

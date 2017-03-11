@@ -16,18 +16,18 @@ import com.ssm.service.impl.BookService;
 public class BookController {
 	@Autowired
 	private BookService bookService;
-	//1 位展示所有圖書的功能準備數據
+	//1 展示所有图书信息的功能
 	@ModelAttribute("booklist") // booklist键
 	public List<Book> listBook() {
 		Book book=new Book();
 		List<Book> list = bookService.selectAll(book);
 		return list; // 值
 	}
-	//展示所有图书的功能
-	@RequestMapping("list")
+
+	@RequestMapping("listALL")
 	public String listAll() {
 		// booklist页面
-		return "booklist1";
+		return "booklist";
 	}
 
 	// 2根据图书id展示詳細信息的功能以及点击率
@@ -38,15 +38,24 @@ public class BookController {
 		bookService.update(book1);
 		Book book2=bookService.select(book.getBid());
 		ModelAndView modelAndView=new ModelAndView();
-		modelAndView.addObject("bd", book2).setViewName("bookDetail1");
+		modelAndView.addObject("bd", book2).setViewName("listDetail");
 		return modelAndView ;
 	}
+	//ModelAttribute 作用是接受前台的数据  （顶在参数前面）
+/*	@RequestMapping("listDetail") // bookdetail值
+	public String bookDetail(HttpServletRequest request,HttpSession session) {
+		String id=request.getParameter("bid");
+		int is=Integer.parseInt(id);
+		Book book2 = bookService.select(is);
+		session.setAttribute("book", book2);
+		return "listDetail";
+	}*/
 	//3模糊查询的功能
 	@RequestMapping("listlike")
 	public ModelAndView listLike(@ModelAttribute Book book){
 		ModelAndView model=new ModelAndView();
 		List<Book> list =bookService.selectAll(book);
-		model.addObject("bl",list ).setViewName("booklikelist1");
+		model.addObject("bl",list ).setViewName("likelist");
 		System.out.println(list.isEmpty());
 		return model;
 	}

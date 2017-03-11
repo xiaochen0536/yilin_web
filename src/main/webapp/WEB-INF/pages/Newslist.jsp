@@ -14,10 +14,12 @@
 </head>
 <body>
 	<form action="${basePath }login" method="get">
-		<input type="text" name="ntitle"/>
+		<input type="text" name="ntitle" value="${NewsList.ntitle }"/>
+		<input type="text" name="i" value="${NewsList.i }"/>
 		<input type="submit" value="搜索"/>
 	</form>
-
+	<a href="${basePath }login?ntitle=${NewsList.ntitle }&i=${NewsList.i -1}">上一页</a>
+	<a href="${basePath }login?ntitle=${NewsList.ntitle }&i=${NewsList.i +1}">下一页</a>
 	<table border="1">
 	<tr>
 	<th>ntitle</th>
@@ -27,7 +29,7 @@
 	<th>nsummary</th>
 	
 	</tr>
-	<c:forEach items="${NewsList }" var="n">
+	<c:forEach items="${NewsList.list}" var="n">
 	<tr>
 	<td><a href="${basePath }details?nid=${n.nid }">${n.ntitle }</a></td>
 	<td><fmt:formatDate value="${n.ntime }" type="date" pattern="yyyy-MM-dd HH:mm:ss"/></td>

@@ -1,33 +1,22 @@
 package com.ssm.entity;
 
 public class Article {
-	//加了一个string  apic;
 	private Integer aid;
 	private String atitle;
 	private String acontent;
 	private String aauthor;
 	private Integer mid;
-	private String apic;
 	
-	
-	public String getApic() {
-		return apic;
-	}
-	public void setApic(String apic) {
-		this.apic = apic;
-	}
 	public Article() {
 		super();
 	}
-	
-	public Article(Integer aid, String atitle, String acontent, String aauthor, Integer mid, String apic) {
+	public Article(Integer aid, String atitle, String acontent, String aauthor, Integer mid) {
 		super();
 		this.aid = aid;
 		this.atitle = atitle;
 		this.acontent = acontent;
 		this.aauthor = aauthor;
 		this.mid = mid;
-		this.apic = apic;
 	}
 	public Integer getAid() {
 		return aid;
