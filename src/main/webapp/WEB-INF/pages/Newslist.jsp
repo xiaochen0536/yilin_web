@@ -15,7 +15,6 @@
 <body>
 	<form action="${basePath }login" method="get">
 		<input type="text" name="ntitle"/>
-		<input type="text" name="i"/>
 		<input type="submit" value="搜索"/>
 	</form>
 

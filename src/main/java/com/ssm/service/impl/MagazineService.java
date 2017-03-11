@@ -9,11 +9,13 @@ import org.springframework.stereotype.Service;
 import com.ssm.dao.MagazineMapper;
 import com.ssm.entity.Magazine;
 import com.ssm.service.IMagazineService;
+
 @Service
 public class MagazineService implements IMagazineService {
 
 	@Autowired
 	private MagazineMapper magazineMapper;
+
 	@Override
 	public int add(Magazine t) {
 		// TODO Auto-generated method stub

@@ -3,8 +3,11 @@ package com.ssm.service.impl;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
 
 import com.ssm.dao.BookMapper;
 import com.ssm.entity.Book;
@@ -41,6 +44,12 @@ public class BookService implements IBookService {
 	public List<Book> selectAll(Book t) {
 		// TODO Auto-generated method stub
 		return bookMapper.selectAll(t);
+	}
+
+	@Override
+	public void showBookByPage(HttpServletRequest request, Model model, int loginUserId) {
+		
+		
 	}
 
 }

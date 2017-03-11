@@ -23,8 +23,16 @@
 		<include refid="bookSql"/>
 		 from book where bid = #{bid}
 	</select>
-	
-	
+	<!-- 分頁查詢 -->
+   <select id="selectBookByPage" resultMap="book"  >  
+      select   
+     <include refid="bookSql"/>
+      from book where bid = #{bid,jdbcType=INTEGER} limit #{startPos},#{pageSize}   
+    </select>  
+    <!-- 取得记录的总数 -->  
+    <select id="getBookCount" resultType="long">  
+      select count(*) from book where bid = #{bid,jdbcType=INTEGER}   
+    </select>  
 	<!-- add -->
 	<insert id="add" parameterType="book">
 		insert into book

@@ -6,25 +6,30 @@
 	<sql id="magazineSql">
 	mid,mtype,mcover,mname,missue,mprice,missn,mpostcode,mpublishdate,status
 	</sql>
-	<!-- selectAll -->
+	<!-- selectAll 查询所有的 -->
 	<select id="selectAll" resultType="magazine" parameterType="magazine">
 		select
 		<include refid="magazineSql"/>
 		 from magazine 
 		 <where>
 		 <if test="mname!=null">mname=#{mname}</if>
+		 <if test="mtype!=null">and mtype=#{mtype}</if>
+		 <if test="mcover!=null">and mcover=#{mcover}</if>
 		 </where>
-		 
 	</select>
 
-	<!-- selectGoods -->
+<!-- selectbyid 通过id查所有 -->
 	<select id="select" resultType="magazine" parameterType="magazine">
 		select
 		<include refid="magazineSql"/>
 		 from magazine where mid = #{mid}
 	</select>
-	
-
+	<!-- 查总共的条数count（*） -->
+<select id="selectCount" resultType="int"  parameterType="magazine">
+	select 
+	count(*)
+	from magazine 
+</select>
 	<!-- addArticle -->
 	<insert id="add" parameterType="magazine">
 		insert into magazine
