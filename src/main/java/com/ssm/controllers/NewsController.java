@@ -26,16 +26,26 @@ public class NewsController {
 		List<News> list = new ArrayList<News>();
 		list = newsService.selectAll(news);	//为后面查询长度准备
 		
-		if(i==null||i<=1){					//判断是否有上一页
+		if(i==null||i<=1){					//判断是否有上一页 或 页数为null时
 			i=1;
 		}
 		if(i>list.size()/5) {				//判断是否有下一页
 			i=list.size()/5;
 			if(list.size()%5>1){
 				i=list.size()/5+1;
-			}	
+			}
 		}
-		list = newsService.paging(news, i);	//得到查询结果
+		if(list.size()%5>1){				//得到末页
+			map.put("mo", list.size()/5+1);
+		}else {
+			map.put("mo", list.size()/5);
+		}
+		if (list.size()/5<0) {
+			list = newsService.selectAll(news);	//如果结果不足一页
+		} else {
+			list = newsService.paging(news, i);	//得到查询结果
+		}
+		
 		map.put("i", i);
 		map.put("list", list);				//存入map
 		return map;							//返回map
@@ -43,7 +53,7 @@ public class NewsController {
 	//跳转
 	@RequestMapping("login")
 	public String login() {
-		return "Newslist";
+		return "news/newslist";
 	}
 	//id查询
 	@RequestMapping("details")

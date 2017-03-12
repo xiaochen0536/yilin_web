@@ -16,7 +16,7 @@ public class News {
 	private Date ntime;			//发布日期
 	private String nauthor;		//作者
 	private Integer ncount;		//点击量
-	private String nsummary;	//作者
+	private String nsummary;	//新闻简介
 	private String npic;		//新闻图片地址
 	private String ntype;		//新闻类型
 	private Integer status;		//开关

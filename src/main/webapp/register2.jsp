@@ -38,12 +38,12 @@
 		<div class="logintop">
 			<div class="logintop_1">
 				<div class="logintop_1c">
-					<a href="index.jsp">意林首页 </a> <a href="#">投稿邮箱 </a> <a href="#">官方微博</a>
+					<a href="#">意林首页 </a> <a href="#">投稿邮箱 </a> <a href="#">官方微博</a>
 				</div>
 			</div>
 			<div class="logintop_2">
 				<div class="logintop_2c">
-					<a href="index.jsp"><img src="image/loginlogo.gif" /> </a>
+					<a href="#"><img src="image/loginlogo.gif" /> </a>
 				</div>
 
 			</div>

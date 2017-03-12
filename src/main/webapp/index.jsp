@@ -54,7 +54,7 @@ a:hover {
 		<div>
 			<div class="wrap" id="header">
 				<div class="left">
-					<a href="#" id="logo"></a>
+					<a href="#" id="logo"><img src="image/logo1.jpg" /></a>
 
 					<div class="topcenter-1_gz">
 
@@ -62,7 +62,7 @@ a:hover {
 						<div class="qz_like_stat">
 							<wb:follow-button uid="1272741311" type="gray_2" width="136" height="24">
 							<div style="float:left;">
-							<img src="image/logo1.jpg" />
+							
 							</div></wb:follow-button>
 							<br />
 						</div>
@@ -70,7 +70,7 @@ a:hover {
 						<div class="btn_dyrss">
 						
 							<a
-								href="javascript:if(confirm('http://mail.qq.com/cgi-bin/bookcol?colid=20171 '))window.location='http://mail.qq.com/cgi-bin/bookcol?colid=20171'"
+								href="http://mail.qq.com/cgi-bin/bookcol?colid=20171"
 								target="_blank"> <img src="image/btn_dyrss.gif" alt="订阅到QQ邮箱"
 								border="0" />
 							</a>
@@ -89,7 +89,7 @@ a:hover {
 </div>
 
              
-                    <a href="javascript:if(confirm('http://3g.yilin.net.cn/  '))window.location='http://3g.yilin.net.cn/'" target="_blank">手机客户端</a><a href="javascript:void(0);" onclick="AddFavorite('意林','index.htm'/*tpa=http://www.yilin.net.cn/*/)">收藏本站</a>
+                    <a href="http://3g.yilin.net.cn" target="_blank">手机客户端</a><a href="javascript:void(0);" onclick="AddFavorite('意林','index.htm'/*tpa=http://www.yilin.net.cn/*/)">收藏本站</a>
                     <input name="ctl00$txt_keyWork" type="text" id="txt_keyWork" class="seachTxt" placeholder="搜索" />
                     <a id="LinkButton1" class="seachBtn" href="javascript:__doPostBack(&#39;ctl00$LinkButton1&#39;,&#39;&#39;)"><u></u></a>
                    
@@ -105,22 +105,22 @@ a:hover {
 			<div id="nav">
 				<div class="nav">
 					<ul>
-						<li><a href="index.aspx.htm" class="cur"><b class="txt">首页</b><span
+						<li><a href="index2.jsp" class="cur"><b class="txt">首页</b><span
 								class="home"><b></b><u>Home</u></span></a></li>
-						<li><a href="newslist.aspx.htm"><b class="txt">新闻</b><span
+						<li><a href="newslist.jsp"><b class="txt">新闻</b><span
 								class="news"><b></b><u>News</u></span></a></li>
-						<li><a href="ebsearch.aspx.htm"><b class="txt">电子杂志</b><span
+						<li><a href="fenleijiansuo.jsp"><b class="txt">电子杂志</b><span
 								class="magazine"><b></b><u>Magazine</u></span></a></li>
-						<li><a href="${basePath}book/listALL"><b class="txt">图书</b><span
+						<li><a href="booklist.jsp"><b class="txt">图书</b><span
 								class="books"><b></b><u>Books</u></span></a></li>
 						<li><a target="_blank"
-							href="javascript:if(confirm('http://wx.yilin.net.cn/  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://wx.yilin.net.cn/'"><b
-								class="txt">语文学校</b><span class="school"><b></b><u>School</u></span></a></li>
+							href="activity.jsp"><b
+								class="txt">活动</b><span class="activity"><b></b><u>activity</u></span></a></li>
 						<li><a target="_blank"
-							href="javascript:if(confirm('http://yllzts.tmall.com/  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://yllzts.tmall.com/'"><b
+							href="http://yllzts.tmall.com"><b
 								class="txt">天猫商城</b><span class="tmall"><b></b><u>Tmall</u></span></a></li>
 						<li class="wm"><a target="_blank"
-							href="javascript:if(confirm('http://yilin.net.cn/wxlm/index.aspx  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://yilin.net.cn/wxlm/index.aspx'"><b
+							href="http://yilin.net.cn/wxlm/index.aspx"><b
 								class="txt">文盟</b><span class="literary"><b></b><u>Literary
 										Alliance</u></span></a></li>
 					</ul>
@@ -162,7 +162,7 @@ a:hover {
 					<ul>
 						<li class="impor">
 							<h2>
-								<a target="_blank" href="newsc.aspx-id=3606.htm"
+								<a target="_blank" href="newsxiangqing1.jsp"
 									title='淑女王冠之我是蜜妮———小MM真人版蜜妮全国海选大赛正式启动'>
 									淑女王冠之我是蜜妮———小MM真人版蜜妮全国海选大赛正式启动</a>
 							</h2> <a href=""><u></u>
@@ -170,40 +170,40 @@ a:hover {
 						</li>
 						<li class="impor">
 							<h2>
-								<a target="_blank" href="newsc.aspx-id=3569.htm"
+								<a target="_blank" href="newsxiangqing2.jsp"
 									title='池小凡携最新力作《淑女王冠》闪耀武汉，引领开学季！'>
 									池小凡携最新力作《淑女王冠》闪耀武汉，引领开学季！</a>
 							</h2> <a href=""><u></u>
 								在前不久刚刚结束的安徽作家天团见面会上，《淑女王冠》正式全国首发，大家有没有买到呢？</a>
 						</li>
 
-						<li><a target="_blank" href="newsc.aspx-id=3632.htm"
+						<li><a target="_blank" href="newsxiangqing3.jsp"
 							title='进击的沧海镜&池小凡：小MM作家团十一月云南签售开始啦！'> <u></u> 进击的沧海镜
 								池小凡：小MM作家团十一
 						</a></li>
 
-						<li><a target="_blank" href="newsc.aspx-id=2703.htm"
+						<li><a target="_blank" href="newsxiangqing3.jsp"
 							title='最美人间四月天，意林公益讲座走进秦皇岛校园'> <u></u> 最美人间四月天，意林公益讲座走进秦皇岛
 						</a></li>
 
-						<li><a target="_blank" href="newsc.aspx-id=2702.htm"
+						<li><a target="_blank" href="newsxiangqing3.jsp"
 							title='世界读书日，意林走进北京西城区三里河小学'> <u></u> 世界读书日，意林走进北京西城区三里河小学
 						</a></li>
 
-						<li><a target="_blank" href="newsc.aspx-id=2701.htm"
+						<li><a target="_blank" href="newsxiangqing3.jsp"
 							title='《意林·小淑女》天后作家沧海镜、胡伟红亮相杭州书展签售，赴西子之约'> <u></u>
 								《意林·小淑女》天后作家沧海镜、胡伟红
 						</a></li>
 
-						<li><a target="_blank" href="newsc.aspx-id=2474.htm"
+						<li><a target="_blank" href="newsxiangqing3.jsp"
 							title='郑集实验小学隆重举行推进读写工程暨意林杯作文大赛'> <u></u> 郑集实验小学隆重举行推进读写工程暨意林
 						</a></li>
 
-						<li><a target="_blank" href="newsc.aspx-id=2446.htm"
+						<li><a target="_blank" href="newsxiangqing3.jsp"
 							title='稠州中学初二学生成《意林》杂志签约作家'> <u></u> 稠州中学初二学生成《意林》杂志签约作家
 						</a></li>
 
-						<li><a target="_blank" href="newsc.aspx-id=2314.htm"
+						<li><a target="_blank" href="newsxiangqing3.jsp"
 							title='安徽省亳州市教育局：亳州中药科技学校携手《意林》杂志开展读书漂流活动'> <u></u>
 								安徽省亳州市教育局：亳州中药科技学校携
 						</a></li>
@@ -215,21 +215,21 @@ a:hover {
 						<ul class="bigImg banner">
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('https://yllzts.tmall.com/shop/view_shop.htm?spm=a1z0e.6651725.0.0.n1JND0&mytmenu=mdianpu&utkn=g%2C2lrmdvwa7dll5tn4zlu5pkgtvk26u1486950400064&user_number_id=527219355&scm=1028.1.1.20001  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/shop/view_shop.htm?spm=a1z0e.6651725.0.0.n1JND0&mytmenu=mdianpu&utkn=g%2C2lrmdvwa7dll5tn4zlu5pkgtvk26u1486950400064&user_number_id=527219355&scm=1028.1.1.20001'"
+								href="https://yllzts.tmall.com/shop/view_shop.htm?spm=a1z0e.6651725.0.0.n1JND0&mytmenu=mdianpu&utkn=g%2C2lrmdvwa7dll5tn4zlu5pkgtvk26u1486950400064&user_number_id=527219355&scm=1028.1.1.20001"
 								target="_blank"> <img src="image/131316081950365000.jpg"
 									alt='开学季！' title='开学季！' width="670" height="382" /></a><span>开学季！</span></li>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('https://yllzts.tmall.com/campaign-3742-17.htm?spm=a1z10.3-b-s.w12088743-15246476541.19.7Rz2cD&scene=taobao_shop  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/campaign-3742-17.htm?spm=a1z10.3-b-s.w12088743-15246476541.19.7Rz2cD&scene=taobao_shop'"
+								href="https://yllzts.tmall.com/campaign-3742-17.htm?spm=a1z10.3-b-s.w12088743-15246476541.19.7Rz2cD&scene=taobao_shop"
 								target="_blank"> <img src="image/131280734438715000.jpg"
 									alt='天猫年货节，礼遇5折，爱先回家' title='天猫年货节，礼遇5折，爱先回家' width="670"
 									height="382" /></a><span>天猫年货节，礼遇5折，爱先回家</span></li>
 
-							<li><a target="_blank" href="newsc-1.aspx.htm"
+							<li><a target="_blank" href="newsxiangqing1.jsp"
 								target="_blank"> <img src="image/131215042909655807.jpg"
 									alt='淑女王冠之我是蜜妮' title='淑女王冠之我是蜜妮' width="670" height="382" /></a><span>淑女王冠之我是蜜妮</span></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3432.htm"
+							<li><a target="_blank" href="newsxiangqing10.jsp"
 								target="_blank"> <img src="image/131097709995066250.jpg"
 									alt='2016全国高考作文“意林体”命中率90%' title='2016全国高考作文“意林体”命中率90%'
 									width="670" height="382" /></a><span>2016全国高考作文“意林体”命中率90%</span></li>
@@ -267,27 +267,27 @@ a:hover {
 									src="image/1312900846221712500000.png" alt='我就是那个嫁给了备胎的女同学'
 									title='我就是那个嫁给了备胎的女同学' width="70" height="70" /></a>
 								<div class="rightTxt">
-									<a target="_blank" href="newsc.aspx-id=3671.htm"
+									<a target="_blank" href="newsxiangqing4.jsp"
 										title='我就是那个嫁给了备胎的女同学'> 我就是那个嫁给了备胎的女同学</a> <span>浏览次数：2101</span>
 								</div></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3597.htm"
+							<li><a target="_blank" href="newsxiangqing4.jsp"
 								title='世界那么大，我们的父母更应该去看看'> <u></u> 世界那么大，我们的父母更应该去看看
 							</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3596.htm"
+							<li><a target="_blank" href="newsxiangqing4.jsp"
 								title='谈钱不伤感情，没钱才伤感情啊'> <u></u> 谈钱不伤感情，没钱才伤感情啊
 							</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3592.htm"
+							<li><a target="_blank" href="newsxiangqing4.jsp"
 								title='我所听过最恶心的分手理由'> <u></u> 我所听过最恶心的分手理由
 							</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3484.htm"
+							<li><a target="_blank" href="newsxiangqing4.jsp"
 								title='关系好，不代表你可以乱动别人的东西'> <u></u> 关系好，不代表你可以乱动别人的东西
 							</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3447.htm"
+							<li><a target="_blank" href="newsxiangqing4.jsp"
 								title='从暗恋你的那一刻起，我就开始了漫长的失恋'> <u></u> 从暗恋你的那一刻起，我就开始了漫长的失恋
 							</a></li>
 
@@ -299,51 +299,51 @@ a:hover {
 						</h3>
 						<ul>
 
-							<li><a target="_blank" href=" HuoDongc.aspx-id=15.htm"
+							<li><a target="_blank" href=" newsxiangqing5.jsp"
 								class="leftImg"> <img src="image/131020696712981250.png"
 									alt='谁的英雄梦不是梦 ——意林“寻找小超人”活动火热招募中'
 									title='谁的英雄梦不是梦 ——意林“寻找小超人”活动火热招募中' width="73" height="71" /></a>
 								<div class="rightTxt">
-									<a target="_blank" href=" HuoDongc.aspx-id=15.htm"
+									<a target="_blank" href=" newsxiangqing5.jsp"
 										title='谁的英雄梦不是梦 ——意林“寻找小超人”活动火热招募中'> 谁的英雄梦不是梦
 										——意林“寻找小超人”活动</a> <span>活动时间：周六日或节假日</span>
 								</div></li>
 
-							<li><a target="_blank" href="HuoDongc.aspx-id=14.htm"
+							<li><a target="_blank" href="newsxiangqing5.jsp"
 								class="leftImg"> <img src="image/131018210628918750.png"
 									alt='春天到了，快来参加《意林·儿童绘本》笑脸PK赛！' title='春天到了，快来参加《意林·儿童绘本》笑脸PK赛！'
 									width="73" height="71" /></a>
 								<div class="rightTxt">
-									<a target="_blank" href="HuoDongc.aspx-id=14.htm"
+									<a target="_blank" href="newsxiangqing5.jsp"
 										title='春天到了，快来参加《意林·儿童绘本》笑脸PK赛！'> 春天到了，快来参加《意林·儿童绘本》笑脸PK</a> <span>活动时间：长期有效</span>
 								</div></li>
 
-							<li><a target="_blank" href=" HuoDongc.aspx-id=11.htm"
+							<li><a target="_blank" href=" newsxiangqing5.jsp"
 								class="leftImg"> <img src="image/130776196269375000.png"
 									alt='《意林》童乐会  欢乐过六一  ——《意林儿童绘本》童乐会'
 									title='《意林》童乐会  欢乐过六一  ——《意林儿童绘本》童乐会' width="73" height="71" /></a>
 								<div class="rightTxt">
-									<a target="_blank" href=" HuoDongc.aspx-id=11.htm"
+									<a target="_blank" href=" newsxiangqing5.jsp"
 										title='《意林》童乐会  欢乐过六一  ——《意林儿童绘本》童乐会'> 《意林》童乐会 欢乐过六一
 										——《意林儿</a> <span>活动时间：2015年5月30日</span>
 								</div></li>
 
-							<li><a target="_blank" href=" HuoDongc.aspx-id=10.htm"
+							<li><a target="_blank" href=" newsxiangqing5.jsp"
 								class="leftImg"> <img src="image/130765005149375000.jpg"
 									alt='召集令|百盛太阳宫·意林童乐会' title='召集令|百盛太阳宫·意林童乐会' width="73"
 									height="71" /></a>
 								<div class="rightTxt">
-									<a target="_blank" href=" HuoDongc.aspx-id=10.htm"
+									<a target="_blank" href=" newsxiangqing5.jsp"
 										title='召集令|百盛太阳宫·意林童乐会'> 召集令|百盛太阳宫·意林童乐会</a> <span>活动时间：2015年5月30日
 										14:30</span>
 								</div></li>
 
-							<li><a target="_blank" href=" HuoDongc.aspx-id=9.htm"
+							<li><a target="_blank" href=" newsxiangqing5.jsp"
 								class="leftImg"> <img src="image/130764759887031250.png"
 									alt='【活动回顾】意林儿童绘本故事会——嗨翻了！' title='【活动回顾】意林儿童绘本故事会——嗨翻了！'
 									width="73" height="71" /></a>
 								<div class="rightTxt">
-									<a target="_blank" href=" HuoDongc.aspx-id=9.htm"
+									<a target="_blank" href=" newsxiangqing5.jsp"
 										title='【活动回顾】意林儿童绘本故事会——嗨翻了！'> 【活动回顾】意林儿童绘本故事会——嗨翻了！</a> <span>活动时间：2015年5月16日</span>
 								</div></li>
 
@@ -351,52 +351,52 @@ a:hover {
 					</div>
 					<div class="cont contThree">
 						<h3>
-							<a target="_blank" href="CompanyNewslist.aspx.htm">意林公益</a>
+							<a target="_blank" href="newsxiangqing6.jsp">意林公益</a>
 						</h3>
 						<ul>
 
 							<li class="open"><a target="_blank"
-								href="newsc.aspx-id=3669.htm"
+								href="newsxiangqing6.jsp"
 								title='福建省漳州市诏安县教育局：官陂中学举办第四届“意林杯”现场作文大赛' class="leftImg"> <img
 									src="image/131286767728733750.JPG"
 									title='福建省漳州市诏安县教育局：官陂中学举办第四届“意林杯”现场作文大赛'
 									alt='福建省漳州市诏安县教育局：官陂中学举办第四届“意林杯”现场作文大赛' width="70" height="70" /></a>
 								<div class="rightTxt">
-									<a target="_blank" href="newsc.aspx-id=3669.htm">
+									<a target="_blank" href="newsxiangqing6.jsp">
 										福建省漳州市诏安县教育局：官陂中学举办第四届“</a> <span><b> 2017-1-12
 											14:39:32</b><b>来源：官陂中学</b></span>
 								</div></li>
 
 							<li class="open"><a target="_blank"
-								href="newsc.aspx-id=3666.htm"
+								href="newsxiangqing6.jsp"
 								title='湖北省汉川市教育局:意林图书漂流进韩集中学凤凰岭文学社' class="leftImg"> <img
 									src="image/131284875047152500.jpg"
 									title='湖北省汉川市教育局:意林图书漂流进韩集中学凤凰岭文学社'
 									alt='湖北省汉川市教育局:意林图书漂流进韩集中学凤凰岭文学社' width="70" height="70" /></a>
 								<div class="rightTxt">
-									<a target="_blank" href="newsc.aspx-id=3666.htm">
+									<a target="_blank" href="newsxiangqing6.jsp">
 										湖北省汉川市教育局:意林图书漂流进韩集中学凤凰</a> <span><b> 2017-1-10
 											10:05:04</b><b>来源：汉川教育信息网</b></span>
 								</div></li>
 
 
-							<li><a target="_blank" href="newsc.aspx-id=3655.htm"
+							<li><a target="_blank" href="newsxiangqing6.jsp"
 								title='四川省德阳市教育局：绵竹中学初中部举行2016“意林杯——汉字拼写大赛”'><u></u>
 									四川省德阳市教育局：绵竹中学初中部举行</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3650.htm"
+							<li><a target="_blank" href="newsxiangqing6.jsp"
 								title='浙江省温州市永嘉县桥下镇中学:《意林》漂流阅读活动'><u></u>
 									浙江省温州市永嘉县桥下镇中学:《意林》</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3624.htm"
+							<li><a target="_blank" href="newsxiangqing6.jsp"
 								title='湖北省荆门市沙洋县教育局：马良中学开展“意林漂流书屋”图书漂流活动 '><u></u>
 									湖北省荆门市沙洋县教育局：马良中学开展</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3619.htm"
+							<li><a target="_blank" href="newsxiangqing6.jsp"
 								title='安徽省合肥市肥东县教体局：长临河学区中心学校第三届“意林校园读书节”系列报道'><u></u>
 									安徽省合肥市肥东县教体局：长临河学区中</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3582.htm"
+							<li><a target="_blank" href="newsxiangqing6.jsp"
 								title='新疆乌鲁木齐教育局：《意林》杂志社走进乌市第六十四小学'><u></u>
 									新疆乌鲁木齐教育局：《意林》杂志社走进</a></li>
 
@@ -404,11 +404,11 @@ a:hover {
 					</div>
 					<div class="cont contFour">
 						<h3>
-							<a target="_blank" href="BookNewslist.aspx.htm">新书上市</a>
+							<a target="_blank" href="booklist.jsp">新书上市</a>
 						</h3>
 						<ul>
 							<li class="open"><a target="_blank"
-								href="newsc.aspx-id=3658.htm" class="leftImg"> <img
+								href="newsxiangqing7.jsp" class="leftImg"> <img
 									src="image/1312736696750058820000.jpg" alt='《巧克力色微凉青春III》'
 									title='《巧克力色微凉青春III》' width="100" height="142" /></a>
 								<div class="rightTxt">
@@ -417,45 +417,45 @@ a:hover {
 										class="tm">+ 天猫商城有售</a> <a href="" class="wx">+ 微信商城有售</a>
 								</div></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3658.htm"
+							<li><a target="_blank" href="newsxiangqing7.jsp"
 								title='《巧克力色微凉青春III》上市：“蔓式微青春”开山力作新番出场！'> 《巧克力色微凉青春III》上市：“蔓</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3660.htm"
+							<li><a target="_blank" href="newsxiangqing7.jsp"
 								title='《钢琴小淑女（第五季）》上市：阳光、向上精彩无限'> 《钢琴小淑女（第五季）》上市：阳光、</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=3659.htm"
+							<li><a target="_blank" href="newsxiangqing7.jsp"
 								title='《琥珀色青春正暖Ⅰ》上市：温暖你整个冬天'> 《琥珀色青春正暖Ⅰ》上市：温暖你整个</a></li>
 
 						</ul>
-						<a target="_blank" href="beauty.aspx.htm" class="advert"> <img
+						<a target="_blank" href="banhua.jsp" class="advert"> <img
 							src="image/ad01.jpg" width="367" height="95" /></a>
 					</div>
 					<div class="cont contFive">
 						<h3>
-							<a href="Jztlist.aspx.htm">意林作文</a>
+							<a href="newslist.jsp">意林作文</a>
 						</h3>
 						<ul>
 							<li class="first"><u></u><a target="_blank"
-								href="javascript:if(confirm('http://yilin.net.cn/ylt  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://yilin.net.cn/ylt'">
+								href="http://yilin.net.cn/ylt">
 									“意林体”2015年高考作文命中80%</a></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=2190.htm"
+							<li><a target="_blank" href="newsxiangqing8.jsp"
 								title='《背影》违反了什么时候的“交规”'><u></u> 《背影》违反了什么时候的“交规” </a>
 								<p></p></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=2167.htm"
+							<li><a target="_blank" href="newsxiangqing8.jsp"
 								title='杨绛：不争的境界'><u></u> 杨绛：不争的境界 </a>
 								<p></p></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=2181.htm"
+							<li><a target="_blank" href="newsxiangqing8.jsp"
 								title='美国的数学课并不简单'><u></u> 美国的数学课并不简单 </a>
 								<p></p></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=2180.htm"
+							<li><a target="_blank" href="newsxiangqing8.jsp"
 								title='伊顿精英为什么发展平平'><u></u> 伊顿精英为什么发展平平 </a>
 								<p></p></li>
 
-							<li><a target="_blank" href="newsc.aspx-id=2188.htm"
+							<li><a target="_blank" href="newsxiangqing8.jsp"
 								title='日本公主上学享受什么待遇'><u></u> 日本公主上学享受什么待遇 </a>
 								<p></p></li>
 
@@ -464,50 +464,50 @@ a:hover {
 					<div class="cont contSix">
 						<h3>
 							<a
-								href="javascript:if(confirm('http://www.ylywwx.com/  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/'">意林语文学校</a><span><a
-								href="javascript:if(confirm('http://www.ylywwx.com/  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/'"
+								href=" http://www.ylywwx.com">意林语文学校</a><span><a
+								href=" http://www.ylywwx.com"
 								target="_blank">金字塔作文</a><a
-								href="javascript:if(confirm('http://www.ylywwx.com/Course/course.aspx  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/Course/course.aspx'"
+								href="http://www.ylywwx.com/Course/course.aspx"
 								target="_blank">PTS专注力</a></span>
 						</h3>
 						<p>
 							<a
-								href="javascript:if(confirm('http://www.ylywwx.com/news/newsDetail.aspx?id=42  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/news/newsDetail.aspx?id=42'"
+								href="http://www.ylywwx.com/news/newsDetail.aspx?id=42"
 								target="_blank">意林语文学校高新校区盛大开业，金字塔课程席卷春城!</a>
 						</p>
 						<p>
 							<a
-								href="javascript:if(confirm('http://www.ylywwx.com/news/newsDetail.aspx?id=41  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/news/newsDetail.aspx?id=41'"
+								href="http://www.ylywwx.com/news/newsDetail.aspx?id=41"
 								target="_blank">小学语文“阅读与理解”归类及方法指导 </a>
 						</p>
 						<p>
 							<a
-								href="javascript:if(confirm('http://www.ylywwx.com/news/newsDetail.aspx?id=39  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/news/newsDetail.aspx?id=39'"
+								href="http://www.ylywwx.com/news/newsDetail.aspx?id=39"
 								target="_blank">《意林金字塔作文教程》，让我们重新定义作文！</a>
 						</p>
 						<div class="selSchool">
 							<div>
 								我在<b>长春</b><a
-									href="javascript:if(confirm('http://wx.yilin.net.cn/  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://wx.yilin.net.cn/'"
+									href="http://wx.yilin.net.cn"
 									target="_blank">[切换]</a>
 							</div>
 							<ul>
 								<li><a
-									href="javascript:if(confirm('http://www.ylywwx.com/Campus/campusDetail.aspx?id=4  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/Campus/campusDetail.aspx?id=4'"
+									href="http://www.ylywwx.com/Campus/campusDetail.aspx?id=4"
 									target="_blank">二道校区</a><a
-									href="javascript:if(confirm('http://www.ylywwx.com/Campus/campusDetail.aspx?id=4  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/Campus/campusDetail.aspx?id=4'"
+									href="http://www.ylywwx.com/Campus/campusDetail.aspx?id=4"
 									target="_blank"><img alt=""
 										src="image/130526319755781250.JPG" /></a></li>
 								<li><a
-									href="javascript:if(confirm('http://www.ylywwx.com/Campus/campusDetail.aspx?id=5  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/Campus/campusDetail.aspx?id=5'"
+									href="http://www.ylywwx.com/Campus/campusDetail.aspx?id=5"
 									target="_blank">桂林路校区</a><a
-									href="javascript:if(confirm('http://www.ylywwx.com/Campus/campusDetail.aspx?id=5  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/Campus/campusDetail.aspx?id=5'"
+									href="http://www.ylywwx.com/Campus/campusDetail.aspx?id=5"
 									target="_blank"><img alt=""
 										src="image/130525579590156250.jpg" /></a></li>
 								<li><a
-									href="javascript:if(confirm('http://www.ylywwx.com/Campus/campusDetail.aspx?id=6  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/Campus/campusDetail.aspx?id=6'"
+									href=" http://www.ylywwx.com/Campus/campusDetail.aspx?id=6"
 									target="_blank">繁荣路校区</a><a
-									href="javascript:if(confirm('http://www.ylywwx.com/Campus/campusDetail.aspx?id=6  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://www.ylywwx.com/Campus/campusDetail.aspx?id=6'"
+									href=" http://www.ylywwx.com/Campus/campusDetail.aspx?id=6"
 									target="_blank"><img alt=""
 										src="image/130526318302187500.JPG" /></a></li>
 							</ul>
@@ -515,7 +515,7 @@ a:hover {
 					</div>
 					<div class="adW">
 						<a target="_blank"
-							href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-5382486214.28.hulvvp&id=521264654447&rn=c84e24f06b534edb8e3ffb7f054bae8a&abbucket=2  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-5382486214.28.hulvvp&id=521264654447&rn=c84e24f06b534edb8e3ffb7f054bae8a&abbucket=2'"
+							href="https://detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-5382486214.28.hulvvp&id=521264654447&rn=c84e24f06b534edb8e3ffb7f054bae8a&abbucket=2"
 							title="花与巡夜人"><img alt="花与巡夜人" width="721px" height="93px"
 							src="image/130923727716737500.jpg" /></a>
 					</div>
@@ -567,10 +567,10 @@ a:hover {
 
 								<li><img src="image/131086228932253750210_290.png" width="102"
 									height="142" /> <a target="_blank"
-									href="ebooklm.aspx-id=499&t=94.htm" class="look"><u></u><span>立即查看</span></a>
+									href="newsxiangqing9.jsp" class="look"><u></u><span>立即查看</span></a>
 									<p>
 										<a target="_blank"
-											href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.62.EH6BQV&id=530468059164&rn=bf634aad4c536852f22011b551f574d8&abbucket=18  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.62.EH6BQV&id=530468059164&rn=bf634aad4c536852f22011b551f574d8&abbucket=18'">意林</a>
+											href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.62.EH6BQV&id=530468059164&rn=bf634aad4c536852f22011b551f574d8&abbucket=18">意林</a>
 									</p>
 									<p>
 										<b> 2016-5月</b><b> -下</b>
@@ -578,10 +578,10 @@ a:hover {
 
 								<li><img src="image/131086198181160000210_290.png" width="102"
 									height="142" /> <a target="_blank"
-									href="ebooklm.aspx-id=498&t=94.htm" class="look"><u></u><span>立即查看</span></a>
+									href="newsxiangqing9.jsp" class="look"><u></u><span>立即查看</span></a>
 									<p>
 										<a target="_blank"
-											href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.56.QsM6sa&id=529547476996&rn=6385b2de13656d339bf427cbd68fcf29&abbucket=18  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.56.QsM6sa&id=529547476996&rn=6385b2de13656d339bf427cbd68fcf29&abbucket=18'">意林</a>
+											href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.56.QsM6sa&id=529547476996&rn=6385b2de13656d339bf427cbd68fcf29&abbucket=18">意林</a>
 									</p>
 									<p>
 										<b> 2016-5月</b><b>-上 </b>
@@ -589,10 +589,10 @@ a:hover {
 
 								<li><img src="image/131067365670691250210_290.png" width="102"
 									height="142" /> <a target="_blank"
-									href="ebooklm.aspx-id=485&t=94.htm" class="look"><u></u><span>立即查看</span></a>
+									href="newsxiangqing9.jsp" class="look"><u></u><span>立即查看</span></a>
 									<p>
 										<a target="_blank"
-											href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-5382486214.35.C0CJPx&id=528744117275&rn=a9508e885bf53a3470d3d26aea62da6e&abbucket=12  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-5382486214.35.C0CJPx&id=528744117275&rn=a9508e885bf53a3470d3d26aea62da6e&abbucket=12'">意林</a>
+											href="'https://detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-5382486214.35.C0CJPx&id=528744117275&rn=a9508e885bf53a3470d3d26aea62da6e&abbucket=12">意林</a>
 									</p>
 									<p>
 										<b> 2016-4月</b><b> -下</b>
@@ -600,10 +600,10 @@ a:hover {
 
 								<li><img src="image/131068024375535000210_290.png" width="102"
 									height="142" /> <a target="_blank"
-									href="ebooklm.aspx-id=484&t=94.htm" class="look"><u></u><span>立即查看</span></a>
+									href="newsxiangqing9.jsp" class="look"><u></u><span>立即查看</span></a>
 									<p>
 										<a target="_blank"
-											href="javascript:if(confirm('https://yllzts.tmall.com/category-511673893.htm?spm=a1z10.3-b.0.0.o8eDrE&search=y&parentCatId=511673892&parentCatName=%D4%D3%D6%BE%2F%C6%DA%BF%AF&catName=%D2%E2%C1%D6  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/category-511673893.htm?spm=a1z10.3-b.0.0.o8eDrE&search=y&parentCatId=511673892&parentCatName=%D4%D3%D6%BE%2F%C6%DA%BF%AF&catName=%D2%E2%C1%D6'">
+											href="https://yllzts.tmall.com/category-511673893.htm?spm=a1z10.3-b.0.0.o8eDrE&search=y&parentCatId=511673892&parentCatName=%D4%D3%D6%BE%2F%C6%DA%BF%AF&catName=%D2%E2%C1%D6">
 											意林</a>
 									</p>
 									<p>
@@ -612,10 +612,10 @@ a:hover {
 
 								<li><img src="image/131050775422728750210_290.png" width="102"
 									height="142" /> <a target="_blank"
-									href="ebooklm.aspx-id=471&t=94.htm" class="look"><u></u><span>立即查看</span></a>
+									href="newsxiangqing9.jsp" class="look"><u></u><span>立即查看</span></a>
 									<p>
 										<a target="_blank"
-											href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a220o.1000855.1998025129.4.gx3IUv&id=526919130241&pvid=c6b61506-f3d0-4303-a5bd-0bf639091b6f&abbucket=_AB-M32_B4&acm=03054.1003.1.587829&aldid=iRiclGV4&abtest=_AB-LR32-PR32&scm=1007.12559.25128.100200300000000&pos=2  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a220o.1000855.1998025129.4.gx3IUv&id=526919130241&pvid=c6b61506-f3d0-4303-a5bd-0bf639091b6f&abbucket=_AB-M32_B4&acm=03054.1003.1.587829&aldid=iRiclGV4&abtest=_AB-LR32-PR32&scm=1007.12559.25128.100200300000000&pos=2'">意林</a>
+											href="https://detail.tmall.com/item.htm?spm=a220o.1000855.1998025129.4.gx3IUv&id=526919130241&pvid=c6b61506-f3d0-4303-a5bd-0bf639091b6f&abbucket=_AB-M32_B4&acm=03054.1003.1.587829&aldid=iRiclGV4&abtest=_AB-LR32-PR32&scm=1007.12559.25128.100200300000000&pos=2 ">意林</a>
 									</p>
 									<p>
 										<b> 2016-3月</b><b> -下</b>
@@ -708,17 +708,17 @@ a:hover {
 					<div class="contEight">
 						<h3>
 							<a target="_blank"
-								href="javascript:if(confirm('http://yllzts.tmall.com/  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://yllzts.tmall.com/'">意林天猫商城</a>
+								href="http://yllzts.tmall.com/  ">意林天猫商城</a>
 						</h3>
 						<ul class="bookList">
 
 							<li><img src="image/131012168179700000210_290.png" width="102"
 								height="142" /> <a target="_blank"
-								href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.51.uOYlT2&id=526342127321&rn=42da9935aeac26c394ba3783442f8ed2&abbucket=19  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.51.uOYlT2&id=526342127321&rn=42da9935aeac26c394ba3783442f8ed2&abbucket=19'"
+								href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.51.uOYlT2&id=526342127321&rn=42da9935aeac26c394ba3783442f8ed2&abbucket=19   "
 								class="look"><u></u><span>立即查看</span></a>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.51.uOYlT2&id=526342127321&rn=42da9935aeac26c394ba3783442f8ed2&abbucket=19  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.51.uOYlT2&id=526342127321&rn=42da9935aeac26c394ba3783442f8ed2&abbucket=19'">
+										href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.51.uOYlT2&id=526342127321&rn=42da9935aeac26c394ba3783442f8ed2&abbucket=19  ">
 										环球儿童文学</a>
 								</p>
 								<p>
@@ -727,10 +727,10 @@ a:hover {
 
 							<li><img src="image/131012163161106250210_290.png" width="102"
 								height="142" /> <a target="_blank"
-								href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.48.JN9FDr&id=526004902228&rn=3cafe93d66a03655db501b61f5e453ea&abbucket=19  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.48.JN9FDr&id=526004902228&rn=3cafe93d66a03655db501b61f5e453ea&abbucket=19'" class="look"><u></u><span>立即查看</span></a>
+								href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.48.JN9FDr&id=526004902228&rn=3cafe93d66a03655db501b61f5e453ea&abbucket=19 " class="look"><u></u><span>立即查看</span></a>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.48.JN9FDr&id=526004902228&rn=3cafe93d66a03655db501b61f5e453ea&abbucket=19  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.48.JN9FDr&id=526004902228&rn=3cafe93d66a03655db501b61f5e453ea&abbucket=19'">意林</a>
+										href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.48.JN9FDr&id=526004902228&rn=3cafe93d66a03655db501b61f5e453ea&abbucket=19  ">意林</a>
 								</p>
 								<p>
 									<b> 2016-2月</b><b class="money">￥5.00</b>
@@ -738,10 +738,10 @@ a:hover {
 
 							<li><img src="image/131012169949387500210_290.png" width="102"
 								height="142" /> <a target="_blank"
-								href="javascript:if(confirm('https://yllzts.tmall.com/category-968198807.htm?spm=a1z10.5-b.0.0.hL4G7q&search=y&parentCatId=511673892&parentCatName=%D4%D3%D6%BE%2F%C6%DA%BF%AF&catName=%D2%E2%C1%D6%BB%E6%D3%A2%D3%EF  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/category-968198807.htm?spm=a1z10.5-b.0.0.hL4G7q&search=y&parentCatId=511673892&parentCatName=%D4%D3%D6%BE%2F%C6%DA%BF%AF&catName=%D2%E2%C1%D6%BB%E6%D3%A2%D3%EF'" class="look"><u></u><span>立即查看</span></a>
+								href="https://yllzts.tmall.com/category-968198807.htm?spm=a1z10.5-b.0.0.hL4G7q&search=y&parentCatId=511673892&parentCatName=%D4%D3%D6%BE%2F%C6%DA%BF%AF&catName=%D2%E2%C1%D6%BB%E6%D3%A2%D3%EF  " class="look"><u></u><span>立即查看</span></a>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('https://yllzts.tmall.com/category-968198807.htm?spm=a1z10.5-b.0.0.hL4G7q&search=y&parentCatId=511673892&parentCatName=%D4%D3%D6%BE%2F%C6%DA%BF%AF&catName=%D2%E2%C1%D6%BB%E6%D3%A2%D3%EF  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/category-968198807.htm?spm=a1z10.5-b.0.0.hL4G7q&search=y&parentCatId=511673892&parentCatName=%D4%D3%D6%BE%2F%C6%DA%BF%AF&catName=%D2%E2%C1%D6%BB%E6%D3%A2%D3%EF'">绘英语</a>
+										href="https://yllzts.tmall.com/category-968198807.htm?spm=a1z10.5-b.0.0.hL4G7q&search=y&parentCatId=511673892&parentCatName=%D4%D3%D6%BE%2F%C6%DA%BF%AF&catName=%D2%E2%C1%D6%BB%E6%D3%A2%D3%EF ">绘英语</a>
 								</p>
 								<p>
 									<b> 2016-2月</b><b class="money">￥8.00</b>
@@ -749,11 +749,11 @@ a:hover {
 
 							<li><img src="image/131012164048918750210_290.png" width="102"
 								height="142" /> <a target="_blank"
-								href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.47.9htxRr&id=526102295985&rn=934e9d3dc39a3da1f84fad8bcd6ea9ae&abbucket=19  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.47.9htxRr&id=526102295985&rn=934e9d3dc39a3da1f84fad8bcd6ea9ae&abbucket=19'"
+								href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.47.9htxRr&id=526102295985&rn=934e9d3dc39a3da1f84fad8bcd6ea9ae&abbucket=19 "
 								class="look"><u></u><span>立即查看</span></a>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.47.9htxRr&id=526102295985&rn=934e9d3dc39a3da1f84fad8bcd6ea9ae&abbucket=19  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.47.9htxRr&id=526102295985&rn=934e9d3dc39a3da1f84fad8bcd6ea9ae&abbucket=19'">
+										href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.47.9htxRr&id=526102295985&rn=934e9d3dc39a3da1f84fad8bcd6ea9ae&abbucket=19 ">
 										少年版</a>
 								</p>
 								<p>
@@ -762,11 +762,10 @@ a:hover {
 
 							<li><img src="image/131012160870012500210_290.png" width="102"
 								height="142" /> <a target="_blank"
-								href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.38.JJd2tk&id=525755662727&rn=38df6819377665c2ba6f26841de08e3d&abbucket=19  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.38.JJd2tk&id=525755662727&rn=38df6819377665c2ba6f26841de08e3d&abbucket=19'"
-								class="look"><u></u><span>立即查看</span></a>
+								href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.38.JJd2tk&id=525755662727&rn=38df6819377665c2ba6f26841de08e3d&abbucket=19 " class="look"><u></u><span>立即查看</span></a>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.38.JJd2tk&id=525755662727&rn=38df6819377665c2ba6f26841de08e3d&abbucket=19  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.38.JJd2tk&id=525755662727&rn=38df6819377665c2ba6f26841de08e3d&abbucket=19'">
+										href="https://detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-5383275859.38.JJd2tk&id=525755662727&rn=38df6819377665c2ba6f26841de08e3d&abbucket=19">
 										意林12+</a>
 								</p>
 								<p>
@@ -777,8 +776,7 @@ a:hover {
 					</div>
 					<div class="adW">
 						<a target="_blank"
-							href="javascript:if(confirm('https://yllzts.tmall.com/category-1115451210.htm?spm=a1z10.5-b.0.0.thGo6k&search=y&parentCatId=726801390&parentCatName=%D1%A7%C9%FA%D4%C4%B6%C1&catName=%D1%A7%BF%C6%C4%C7%D0%A9%CA%C2%B6%F9  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/category-1115451210.htm?spm=a1z10.5-b.0.0.thGo6k&search=y&parentCatId=726801390&parentCatName=%D1%A7%C9%FA%D4%C4%B6%C1&catName=%D1%A7%BF%C6%C4%C7%D0%A9%CA%C2%B6%F9'"
-							title="决胜中考高考"><img alt="决胜中考高考" width="721px" height="93px"
+							href="https://yllzts.tmall.com/category-1115451210.htm?spm=a1z10.5-b.0.0.thGo6k&search=y&parentCatId=726801390&parentCatName=%D1%A7%C9%FA%D4%C4%B6%C1&catName=%D1%A7%BF%C6%C4%C7%D0%A9%CA%C2%B6%F9" title="决胜中考高考"><img alt="决胜中考高考" width="721px" height="93px"
 							src="image/131015466006887500.jpg" /></a>
 					</div>
 				</div>
@@ -798,46 +796,42 @@ a:hover {
 					</div>
 					<div class="rightCont rightTwo">
 						<h3>
-							<a href="About.aspx-id=2.htm">意林大事记</a>
+							<a href="yilindashijian.jsp">意林大事记</a>
 						</h3>
 						<ul>
-							<li><a href="About.aspx-id=2.htm"><u></u>
+							<li><a href="yilindashijian.jsp"><u></u>
 									《意林》荣晋2016龙源数字阅读影响力期刊 top100国内排行第3名，海外排行17名，移动终端阅读</a></li>
 						</ul>
 					</div>
 					<div class="rightCont">
 						<a target="_blank"
-							href="javascript:if(confirm('https://yllzts.tmall.com/category-1115451210.htm?spm=a1z10.5-b.0.0.thGo6k&search=y&parentCatId=726801390&parentCatName=%D1%A7%C9%FA%D4%C4%B6%C1&catName=%D1%A7%BF%C6%C4%C7%D0%A9%CA%C2%B6%F9  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/category-1115451210.htm?spm=a1z10.5-b.0.0.thGo6k&search=y&parentCatId=726801390&parentCatName=%D1%A7%C9%FA%D4%C4%B6%C1&catName=%D1%A7%BF%C6%C4%C7%D0%A9%CA%C2%B6%F9'"
-							title="学科那些事儿"><img alt="学科那些事儿" width="256px" height="575px"
+							href="https://yllzts.tmall.com/category-1115451210.htm?spm=a1z10.5-b.0.0.thGo6k&search=y&parentCatId=726801390&parentCatName=%D1%A7%C9%FA%D4%C4%B6%C1&catName=%D1%A7%BF%C6%C4%C7%D0%A9%CA%C2%B6%F9" title="学科那些事儿"><img alt="学科那些事儿" width="256px" height="575px"
 							src="image/131015466285793750.jpg" /></a>
 
 					</div>
 					<div class="rightCont rightThree">
 						<h3>
 							<a target="_blank"
-								href="javascript:if(confirm('https://yllzts.tmall.com/search.htm?spm=a1z10.3-b.0.0.4IBgIL&search=y&orderType=newOn_desc  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/search.htm?spm=a1z10.3-b.0.0.4IBgIL&search=y&orderType=newOn_desc'">
+								href="https://yllzts.tmall.com/search.htm?spm=a1z10.3-b.0.0.4IBgIL&search=y&orderType=newOn_desc">
 								新书推荐</a>
 						</h3>
 						<ul>
 							<span class="arrLeft">&lt;</span>
 
 							<li class="cur"><a target="_blank"
-								href="javascript:if(confirm('https://yllzts.tmall.com/?userId=&shopId=62899707&view_type=&order_type=&search=y&keyword=%D4%A4%B6%A8  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/?userId=&shopId=62899707&view_type=&order_type=&search=y&keyword=%D4%A4%B6%A8'"
-								class="imgWrap"> <img src="image/131025830404700000.jpg"
+								href="https://yllzts.tmall.com/?userId=&shopId=62899707&view_type=&order_type=&search=y&keyword=%D4%A4%B6%A8" class="imgWrap"> <img src="image/131025830404700000.jpg"
 									title='女生文学-花与梦旅人4（大结局）' alt='女生文学-花与梦旅人4（大结局）' width="254"
 									height="256" /> <span> 女生文学-花与梦旅人4（大结局）</span>
 							</a></li>
 
 							<li class="cur"><a target="_blank"
-								href="javascript:if(confirm('https://yllzts.tmall.com/?userId=&shopId=62899707&view_type=&order_type=&search=y&keyword=%D4%A4%B6%A8  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/?userId=&shopId=62899707&view_type=&order_type=&search=y&keyword=%D4%A4%B6%A8'"
-								class="imgWrap"> <img src="image/131025829169075000.jpg"
+								href="https://yllzts.tmall.com/?userId=&shopId=62899707&view_type=&order_type=&search=y&keyword=%D4%A4%B6%A8" class="imgWrap"> <img src="image/131025829169075000.jpg"
 									title='香港校园指定课外读本 【意林·小超人】' alt='香港校园指定课外读本 【意林·小超人】'
 									width="254" height="256" /> <span> 香港校园指定课外读本 【意林·小超人】</span>
 							</a></li>
 
 							<li class="cur"><a target="_blank"
-								href="javascript:if(confirm('https://yllzts.tmall.com/?userId=&shopId=62899707&view_type=&order_type=&search=y&keyword=%D4%A4%B6%A8  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://yllzts.tmall.com/?userId=&shopId=62899707&view_type=&order_type=&search=y&keyword=%D4%A4%B6%A8'"
-								class="imgWrap"> <img src="image/131025830122981250.jpg"
+								href="https://yllzts.tmall.com/?userId=&shopId=62899707&view_type=&order_type=&search=y&keyword=%D4%A4%B6%A8" class="imgWrap"> <img src="image/131025830122981250.jpg"
 									title='松果阅读-多味之恋系列图书' alt='松果阅读-多味之恋系列图书' width="254"
 									height="256" /> <span> 松果阅读-多味之恋系列图书</span>
 							</a></li>
@@ -851,32 +845,32 @@ a:hover {
 						</h3>
 						<ul>
 
-							<li><a target="_blank" href="ebookc.aspx-id=3601&t=96.htm"
+							<li><a target="_blank" href="tougao.jsp"
 								title='弘一法师的认真'> <u></u> 弘一法师的认真
 							</a></li>
 
-							<li><a target="_blank" href="ebookc.aspx-id=3528&t=94.htm"
+							<li><a target="_blank" href="tougao.jsp"
 								title='穿碎花裙的胖姑娘'> <u></u> 穿碎花裙的胖姑娘
 							</a></li>
 
-							<li><a target="_blank" href="ebookc.aspx-id=3592&t=118.htm"
+							<li><a target="_blank" href="tougao.jsp"
 								title='When We Were Young, We Loved Each Other and Were I'>
 									<u></u> When We Were Young, We Loved Each Other and Were I
 							</a></li>
 
-							<li><a target="_blank" href="ebookc.aspx-id=3527&t=94.htm"
+							<li><a target="_blank" href="tougao.jsp"
 								title='危急时刻你先想到谁'> <u></u> 危急时刻你先想到谁
 							</a></li>
 
-							<li><a target="_blank" href="ebookc.aspx-id=3526&t=94.htm"
+							<li><a target="_blank" href="tougao.jsp"
 								title='无敌上上签10则'> <u></u> 无敌上上签10则
 							</a></li>
 
-							<li><a target="_blank" href="ebookc.aspx-id=3525&t=94.htm"
+							<li><a target="_blank" href="tougao.jsp"
 								title='请把我的爱情邮给我'> <u></u> 请把我的爱情邮给我
 							</a></li>
 
-							<li><a target="_blank" href="ebookc.aspx-id=3530&t=94.htm"
+							<li><a target="_blank" href="tougao.jsp"
 								title='赵匡胤：按身高发工资'> <u></u> 赵匡胤：按身高发工资
 							</a></li>
 
@@ -888,7 +882,7 @@ a:hover {
 						</h3>
 						<div>
 							<a target="_blank"
-								href="javascript:if(confirm('https://wap.koudaitong.com/v2/showcase/tag?alias=r1g92mi2&reft=1456908492795_1456908551959&spm=g206344148_g206344148_t66229006  \n\n?τ?δ? Teleport Pro ??ì?? ˇ????δ??Э????(}?: gopher)c  \n\n?Ы????????e?'))window.location='https://wap.koudaitong.com/v2/showcase/tag?alias=r1g92mi2&reft=1456908492795_1456908551959&spm=g206344148_g206344148_t66229006'">
+								href="https://wap.koudaitong.com/v2/showcase/tag?alias=r1g92mi2&reft=1456908492795_1456908551959&spm=g206344148_g206344148_t66229006  ">
 								<img src="image/131013872451418750.png" width="256" height="117"
 								title="微信" />
 							</a>
@@ -896,39 +890,36 @@ a:hover {
 						<ul>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('http://detail.koudaitong.com/show/goods?alias=fpt4ew71&reft=1456908551959_1456913881370&spm=g206344148_t66229006_t66229006  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://detail.koudaitong.com/show/goods?alias=fpt4ew71&reft=1456908551959_1456913881370&spm=g206344148_t66229006_t66229006'"
-								title='意林2016年杂志订阅'><u></u> 意林2016年杂志订阅</a></li>
+								href="http://detail.koudaitong.com/show/goods?alias=fpt4ew71&reft=1456908551959_1456913881370&spm=g206344148_t66229006_t66229006 " title='意林2016年杂志订阅'><u></u> 意林2016年杂志订阅</a></li>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('http://detail.koudaitong.com/show/goods?alias=enemh0qg&reft=1456908551959_1456914057090&spm=g206344148_t66229006_t66229006  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://detail.koudaitong.com/show/goods?alias=enemh0qg&reft=1456908551959_1456914057090&spm=g206344148_t66229006_t66229006'"
-								title='意林·小小姐2016'><u></u> 意林·小小姐2016</a></li>
+								href="http://detail.koudaitong.com/show/goods?alias=enemh0qg&reft=1456908551959_1456914057090&spm=g206344148_t66229006_t66229006 " title='意林·小小姐2016'><u></u> 意林·小小姐2016</a></li>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('http://detail.koudaitong.com/show/goods?alias=m65sog2p&reft=1456908551959_1456914127610&spm=g206344148_t66229006_t66229006  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://detail.koudaitong.com/show/goods?alias=m65sog2p&reft=1456908551959_1456914127610&spm=g206344148_t66229006_t66229006'"
-								title='意林·少年版 2016'><u></u> 意林·少年版 2016</a></li>
+								href="http://detail.koudaitong.com/show/goods?alias=m65sog2p&reft=1456908551959_1456914127610&spm=g206344148_t66229006_t66229006  " title='意林·少年版 2016'><u></u> 意林·少年版 2016</a></li>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('http://detail.koudaitong.com/show/goods?alias=193wdzsgn&reft=1456908551959_1456914010667&spm=g206344148_t66229006_t66229006  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://detail.koudaitong.com/show/goods?alias=193wdzsgn&reft=1456908551959_1456914010667&spm=g206344148_t66229006_t66229006'"
+								href="http://detail.koudaitong.com/show/goods?alias=193wdzsgn&reft=1456908551959_1456914010667&spm=g206344148_t66229006_t66229006  "
 								title='意林·作文素材2016'><u></u> 意林·作文素材2016</a></li>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('http://wap.koudaitong.com/v2/goods/15oz5zkob  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://wap.koudaitong.com/v2/goods/15oz5zkob'"
+								href="http://wap.koudaitong.com/v2/goods/15oz5zkob  "
 								title='《初中英语那些事儿》'><u></u> 《初中英语那些事儿》</a></li>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('http://wap.koudaitong.com/v2/goods/1kuqqnpl  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://wap.koudaitong.com/v2/goods/1kuqqnpl'"
+								href="http://wap.koudaitong.com/v2/goods/1kuqqnpl "
 								title='《初中数学那些事儿》'><u></u> 《初中数学那些事儿》</a></li>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('http://wap.koudaitong.com/v2/goods/1i70tvtlr  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://wap.koudaitong.com/v2/goods/1i70tvtlr'"
+								href="http://wap.koudaitong.com/v2/goods/1i70tvtlr "
 								title='《初中语文那些事儿》'><u></u> 《初中语文那些事儿》</a></li>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('http://wap.koudaitong.com/v2/goods/1cacnrr60  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://wap.koudaitong.com/v2/goods/1cacnrr60'"
+								href="http://wap.koudaitong.com/v2/goods/1cacnrr60"
 								title='《小学数学那些事儿》'><u></u> 《小学数学那些事儿》</a></li>
 
 							<li><a target="_blank"
-								href="javascript:if(confirm('http://wap.koudaitong.com/v2/goods/55vkix7s  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://wap.koudaitong.com/v2/goods/55vkix7s'"
+								href="http://wap.koudaitong.com/v2/goods/55vkix7s"
 								title='《小学语文那些事儿》'><u></u> 《小学语文那些事儿》</a></li>
 
 						</ul>
@@ -949,10 +940,10 @@ a:hover {
 					<ul>
 
 						<li><a
-							href="javascript:if(confirm('http://yilin.net.cn/news/newsc.aspx?id=734  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://yilin.net.cn/news/newsc.aspx?id=734'"
+							href="http://yilin.net.cn/news/newsc.aspx?id=734 "
 							target="_blank">全部微信平台</a></li>
-						<li><a href="newsc.aspx-id=2235.htm" target="_blank">我要投稿</a></li>
-						<li><a href="About.aspx-id=7.htm" target="_blank">广告投放</a></li>
+						<li><a href="woyaotougao.jsp" target="_blank">我要投稿</a></li>
+						<li><a href="guangaotoufang.jsp" target="_blank">广告投放</a></li>
 						<li><a href="javascript:" class="returnTop">返回顶部</a></li>
 					</ul>
 				</div>
@@ -1116,64 +1107,64 @@ a:hover {
 								<h3>意林微博</h3>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://weibo.com/yilinzazhi  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://weibo.com/yilinzazhi'">意林微博</a>
+										href="http://weibo.com/yilinzazhi ">意林微博</a>
 								</p>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://e.weibo.com/yilinwenmeng  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://e.weibo.com/yilinwenmeng'">意林文盟微博</a>
+										href="http://e.weibo.com/yilinwenmeng">意林文盟微博</a>
 								</p>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://weibo.com/yilinyuanchuang  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://weibo.com/yilinyuanchuang'">意林原创版微博</a>
+										href="http://weibo.com/yilinyuanchuang">意林原创版微博</a>
 								</p>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://e.weibo.com/xiaoyilinbk/profile  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://e.weibo.com/xiaoyilinbk/profile'">意林少年版微博</a>
+										href="http://e.weibo.com/xiaoyilinbk/profile">意林少年版微博</a>
 								</p>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://e.weibo.com/u/1661597600  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://e.weibo.com/u/1661597600'">意林小淑女-小小姐微博</a>
+										href="http://e.weibo.com/u/1661597600 ">意林小淑女-小小姐微博</a>
 								</p>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://e.weibo.com/u/1732095983  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://e.weibo.com/u/1732095983'">意林12+微博</a>
+										href="http://e.weibo.com/u/1732095983 ">意林12+微博</a>
 								</p>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://e.weibo.com/yilinxiaowenxue  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://e.weibo.com/yilinxiaowenxue'">意林小文学微博</a>
+										href="http://e.weibo.com/yilinxiaowenxue ">意林小文学微博</a>
 								</p>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://e.weibo.com/2207897105/profile  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://e.weibo.com/2207897105/profile'">意林作文素材微博</a>
+										href="http://e.weibo.com/2207897105/profile">意林作文素材微博</a>
 								</p>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://weibo.com/yiligushi  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://weibo.com/yiligushi'">意林儿童绘本微博</a>
+										href="http://weibo.com/yiligushi">意林儿童绘本微博</a>
 								</p>
 								<p>
 									<a target="_blank"
-										href="javascript:if(confirm('http://weibo.com/qingxiaoshuo  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://weibo.com/qingxiaoshuo'">意林轻小说微博</a>
+										href="http://weibo.com/qingxiaoshuo">意林轻小说微博</a>
 								</p>
 							</li>
 							<li>
 								<h3>关于意林</h3>
 								<p>
-									<a href="About.aspx-id=1.htm">意林介绍</a>
+									<a href="yilinjiesao.jsp">意林介绍</a>
 								</p>
 								<p>
-									<a href="About.aspx-id=2.htm">意林大事记</a>
+									<a href="yilindashijian.jsp">意林大事记</a>
 								</p>
 								<p>
-									<a href="About.aspx-id=4.htm">联系我们</a>
+									<a href="lianxiwomen.jsp">联系我们</a>
 								</p>
 								<p>
-									<a href="About.aspx-id=5.htm">诚聘英才</a>
+									<a href="chenpinyincai.jsp">诚聘英才</a>
 								</p>
 								<p>
-									<a href="About.aspx-id=6.htm">合作伙伴</a>
+									<a href="hezuohuoban.jsp">合作伙伴</a>
 								</p>
 								<p>
-									<a href="About.aspx-id=7.htm">广告服务</a>
+									<a href="guangaofuwu.jsp">广告服务</a>
 								</p>
 							</li>
 							<li>
@@ -1181,7 +1172,7 @@ a:hover {
 								<p><img src="image/logo2.jpg" /></p>
 								<p>
 									<a
-										href="javascript:if(confirm('http://zhushou.360.cn/detail/index/soft_id/845541?recrefer=SE_D_%E4%B8%AD%E5%9B%BD%E5%A5%BD%E4%BD%9C%E6%96%87  \n\n?τ?δ? Teleport Pro ??ì?? ?λ????????????????·??c  \n\n?Ы????????e?'))window.location='http://zhushou.360.cn/detail/index/soft_id/845541?recrefer=SE_D_%E4%B8%AD%E5%9B%BD%E5%A5%BD%E4%BD%9C%E6%96%87'"
+										href="http://zhushou.360.cn/detail/index/soft_id/845541?recrefer=SE_D_%E4%B8%AD%E5%9B%BD%E5%A5%BD%E4%BD%9C%E6%96%87 "
 										target="_blank">意林作文<br /> 手机端下载
 									</a>
 								</p>
