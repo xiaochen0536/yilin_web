@@ -2,10 +2,7 @@ package com.ssm.controllers;
 
 import java.util.List;
 
-import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ScannedGenericBeanDefinition;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,36 +24,13 @@ public class UserController {
 		return selectAll;
 
 	}
-	//注册跳转
-	@RequestMapping("register")
-	public String register() {
-		return "login/register2";
-	}
 	
-	//登录跳转
-	@RequestMapping("login2")
-	public String login() {
-		return "login/login";
-	}
-	
-	//登录
 	@RequestMapping("login")
-	public ModelAndView login(@ModelAttribute User user,HttpSession session,String yzm) {
-		String code = (String) session.getAttribute("code");
+	public ModelAndView login(@ModelAttribute User user) {
+		User login = userService.login(user);
 		ModelAndView model = new ModelAndView();
-		if(code.equalsIgnoreCase(yzm)){
-			System.out.println(code);
-			User login = userService.login(user);
-			if(null==login){
-				model.addObject("yzjg", "alert('用户名或密码不正确！！');location.href='user/login2';").setViewName("login/login");
-			}else {
-				model.addObject("user", login).setViewName("login/index");
-			}
-			
-		}else {
-			model.addObject("yzjg", "alert('验证码错误！！');location.href='user/login2';").setViewName("login/login");
-		}
-		
+
+		model.addObject("user", login).setViewName("list");
 		return model;
 
 	}

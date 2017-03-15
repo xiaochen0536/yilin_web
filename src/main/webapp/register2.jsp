@@ -60,12 +60,12 @@
 
 					<div class="reg_item">
 						<label for="email">用户名：&nbsp;</label><input
-							name="uname" type="text"
+							name="ctl00$ContentPlaceHolder1$nick" type="text"
 							id="ContentPlaceHolder1_nick" class="nick" /> &nbsp;
 					</div>
 					<div class="reg_item2">4－20位字符，可由字母，数字及特殊字符组成</div>
 					<div class="reg_item">
-						<label for="umail">邮箱：&nbsp;&nbsp;</label><input
+						<label for="email">邮箱：&nbsp;&nbsp;</label><input
 							name="ctl00$ContentPlaceHolder1$email" type="text"
 							id="ContentPlaceHolder1_email" class="email" />
 
@@ -73,21 +73,21 @@
 					<div class="reg_item2">邮箱可作为登录账号，并用于找回密码，接收订单通知等</div>
 					<div class="reg_item">
 						<label for="email">密码：&nbsp;&nbsp;</label><input
-							name="upassword" type="password"
+							name="ctl00$ContentPlaceHolder1$pass" type="password"
 							id="ContentPlaceHolder1_pass" class="pass" />
 
 					</div>
 					<div class="reg_item2">6－20位字符，可由大小写英文、数字或符号组成</div>
 					<div class="reg_item">
 						<label for="email">确认密码：</label> <input
-							name="upassword2" type="password"
+							name="ctl00$ContentPlaceHolder1$re_pswd" type="password"
 							id="ContentPlaceHolder1_re_pswd" class="email" />
 					</div>
 					<div class="reg_item2">请再次输入登录密码</div>
 					<div class="reg_item">
 						<label for="email">验证码：&nbsp;</label>
 						<input name="ctl00$ContentPlaceHolder1$ValidateCode" type="text" id="ContentPlaceHolder1_ValidateCode" class="validtxt" /> 
-						<b><A href=""> <img id="getcode" src="code.html"  src="" /></b><b>看不清
+						<b><A href=""> <img id="getcode" src="image/ValidateCode.aspx.jpg"  src="" /></b><b>看不清
 							换一张</b> </A>
 					</div>
 			

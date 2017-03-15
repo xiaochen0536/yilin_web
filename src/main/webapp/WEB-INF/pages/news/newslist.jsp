@@ -189,13 +189,14 @@ a:hover {
 									<c:forEach items="${NewsList.list}" var="n">
 										<li>
 											<h2>
-												<a href="${basePath }News/details?nid=${n.nid }" 
+												<a href="newsxiangqing3.jsp" 
 													title='进击的沧海镜池小凡：小MM作家团十一月云南签售开始啦！'>${n.ntitle }</a>
 											</h2>
-											<img width="80px" height="90px" src="${n.npic }" /><p>
+											<a href="newsxiangqing3.jsp" ><img
+											width="80px" height="90px" src="${n.npic }" /></a><p>
 													${n.nsummary }
 													<br /> <span class="time"><fmt:formatDate value="${n.ntime }" type="date" pattern="yyyy-MM-dd HH:mm:ss"/></span>
-												</p>
+												</p></a>
 										</li>
 									</c:forEach>
 								</ul>
