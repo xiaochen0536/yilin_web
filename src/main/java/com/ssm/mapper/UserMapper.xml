@@ -12,7 +12,11 @@
 		<include refid="userSql1"/>
 		 from userone 
 		 <where>
-		 <if test="uname!=null">uname=#{uname}</if>
+		 	<choose>
+		 		<when test="sid!=null">sid=#{sid}</when>
+		 		<when test="uname!=null">uname LIKE #{uname}</when>
+		 		<when test="umail!=null">umail LIKE #{umail}</when>
+		 	</choose>
 		 </where>
 		 
 	</select>
@@ -51,6 +55,7 @@
 		<set>
 			<if test="uname!=null">uname=#{uname},</if>
 			<if test="upassword!=null">upassword=#{upassword},</if>
+			<if test="umail!=null">umail=#{umail},</if>
 			<if test="status!=null">status=#{status},</if>
 		</set>
 		where sid = #{sid}
