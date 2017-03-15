@@ -31,11 +31,11 @@ public class NewsController {
 		}
 		if(i>list.size()/5) {				//判断是否有下一页
 			i=list.size()/5;
-			if(list.size()%5>1){
+			if(list.size()%5>0){
 				i=list.size()/5+1;
 			}
 		}
-		if(list.size()%5>1){				//得到末页
+		if(list.size()%5>0){				//得到末页
 			map.put("mo", list.size()/5+1);
 		}else {
 			map.put("mo", list.size()/5);
@@ -62,6 +62,6 @@ public class NewsController {
 		news1.setNcount(news1.getNcount()+1);
 		newsService.update(news1);
 		news = newsService.select(news.getNid());
-		return new ModelAndView("details").addObject("NewsSelect", news);
+		return new ModelAndView("news/newsxiangqing").addObject("NewsSelect", news);
 	}
 }
